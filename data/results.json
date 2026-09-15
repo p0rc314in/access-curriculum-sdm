@@ -1,0 +1,711 @@
+{
+  "schema_version": 1,
+  "seed": 0,
+  "width": 128,
+  "sdm_layers": 8,
+  "factors": 2,
+  "codebook_size": 32,
+  "logical_rows_per_layer": 1024,
+  "terminal_reads": 8,
+  "terminal_writes": 8,
+  "headline_arms": [
+    "dense_attention",
+    "native_k8",
+    "hybrid_native_k8",
+    "fixed_k8",
+    "hybrid_fixed_k8",
+    "wiki_forward",
+    "hybrid_wiki_forward",
+    "recall_forward",
+    "hybrid_recall_forward",
+    "balanced",
+    "hybrid_balanced"
+  ],
+  "factorial_cells": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H"
+  ],
+  "rows": {
+    "A": {
+      "wikitext": {
+        "validation": {
+          "nll": 4.335365849723524,
+          "next_token_accuracy": 0.31553335273385713,
+          "scored_targets": 247416,
+          "scored_bytes": 1145546
+        },
+        "test": {
+          "nll": 4.3453217402281314,
+          "next_token_accuracy": 0.31725035811816843,
+          "scored_targets": 283426,
+          "scored_bytes": 1289122
+        },
+        "source_id": "wikitext:A"
+      },
+      "recall": {
+        "validation": {
+          "exact_set_accuracy": 0.5572102864583334,
+          "examples": 61440,
+          "queries": 983040,
+          "query_accuracy": 0.6014383951822917,
+          "query_loss": 1.9711132565535385
+        },
+        "test": {
+          "exact_set_accuracy": 0.5565755208333333,
+          "examples": 61440,
+          "queries": 983040,
+          "query_accuracy": 0.6011962890625,
+          "query_loss": 1.9718348819536307
+        },
+        "source_id": "recall:A"
+      }
+    },
+    "B": {
+      "wikitext": {
+        "validation": {
+          "nll": 4.3312068678580555,
+          "next_token_accuracy": 0.3161840786367899,
+          "scored_targets": 247416,
+          "scored_bytes": 1145546
+        },
+        "test": {
+          "nll": 4.344879721277556,
+          "next_token_accuracy": 0.31694339968810203,
+          "scored_targets": 283426,
+          "scored_bytes": 1289122
+        },
+        "source_id": "wikitext:B"
+      },
+      "recall": {
+        "validation": {
+          "exact_set_accuracy": 0.5687825520833333,
+          "examples": 61440,
+          "queries": 983040,
+          "query_accuracy": 0.6028462727864583,
+          "query_loss": 1.9649278274134
+        },
+        "test": {
+          "exact_set_accuracy": 0.568359375,
+          "examples": 61440,
+          "queries": 983040,
+          "query_accuracy": 0.6025787353515625,
+          "query_loss": 1.9657894194206165
+        },
+        "source_id": "recall:B"
+      }
+    },
+    "C": {
+      "wikitext": {
+        "validation": {
+          "nll": 4.334802672522805,
+          "next_token_accuracy": 0.31550910207908944,
+          "scored_targets": 247416,
+          "scored_bytes": 1145546
+        },
+        "test": {
+          "nll": 4.348883819273207,
+          "next_token_accuracy": 0.316138956905859,
+          "scored_targets": 283426,
+          "scored_bytes": 1289122
+        },
+        "source_id": "wikitext:C"
+      },
+      "recall": {
+        "validation": {
+          "exact_set_accuracy": 0.5731119791666667,
+          "examples": 61440,
+          "queries": 983040,
+          "query_accuracy": 0.6029825846354167,
+          "query_loss": 1.9664934828929594
+        },
+        "test": {
+          "exact_set_accuracy": 0.5734212239583333,
+          "examples": 61440,
+          "queries": 983040,
+          "query_accuracy": 0.6030629475911459,
+          "query_loss": 1.966586824591286
+        },
+        "source_id": "recall:C"
+      }
+    },
+    "D": {
+      "wikitext": {
+        "validation": {
+          "nll": 4.3304246840854885,
+          "next_token_accuracy": 0.3155293109580625,
+          "scored_targets": 247416,
+          "scored_bytes": 1145546
+        },
+        "test": {
+          "nll": 4.344434065533888,
+          "next_token_accuracy": 0.31667525209402103,
+          "scored_targets": 283426,
+          "scored_bytes": 1289122
+        },
+        "source_id": "wikitext:D"
+      },
+      "recall": {
+        "validation": {
+          "exact_set_accuracy": 0.570947265625,
+          "examples": 61440,
+          "queries": 983040,
+          "query_accuracy": 0.6031494140625,
+          "query_loss": 1.9627839727936893
+        },
+        "test": {
+          "exact_set_accuracy": 0.5720540364583333,
+          "examples": 61440,
+          "queries": 983040,
+          "query_accuracy": 0.6033538818359375,
+          "query_loss": 1.9625327169963687
+        },
+        "source_id": "recall:D"
+      }
+    },
+    "E": {
+      "wikitext": {
+        "validation": {
+          "nll": 4.330865155005812,
+          "next_token_accuracy": 0.31568694021405247,
+          "scored_targets": 247416,
+          "scored_bytes": 1145546
+        },
+        "test": {
+          "nll": 4.342829987823651,
+          "next_token_accuracy": 0.3159766570462837,
+          "scored_targets": 283426,
+          "scored_bytes": 1289122
+        },
+        "source_id": "wikitext:E"
+      },
+      "recall": {
+        "validation": {
+          "exact_set_accuracy": 0.5530598958333334,
+          "examples": 61440,
+          "queries": 983040,
+          "query_accuracy": 0.6002736409505208,
+          "query_loss": 1.9794412242540602
+        },
+        "test": {
+          "exact_set_accuracy": 0.5534016927083333,
+          "examples": 61440,
+          "queries": 983040,
+          "query_accuracy": 0.6003061930338541,
+          "query_loss": 1.9796825675208614
+        },
+        "source_id": "recall:E"
+      }
+    },
+    "F": {
+      "wikitext": {
+        "validation": {
+          "nll": 4.326184697844538,
+          "next_token_accuracy": 0.31636191677175285,
+          "scored_targets": 247416,
+          "scored_bytes": 1145546
+        },
+        "test": {
+          "nll": 4.338881680404729,
+          "next_token_accuracy": 0.31726447114943584,
+          "scored_targets": 283426,
+          "scored_bytes": 1289122
+        },
+        "source_id": "wikitext:F"
+      },
+      "recall": {
+        "validation": {
+          "exact_set_accuracy": 0.5703125,
+          "examples": 61440,
+          "queries": 983040,
+          "query_accuracy": 0.6027180989583333,
+          "query_loss": 1.9662766311642674
+        },
+        "test": {
+          "exact_set_accuracy": 0.570849609375,
+          "examples": 61440,
+          "queries": 983040,
+          "query_accuracy": 0.6027313232421875,
+          "query_loss": 1.9658338887490876
+        },
+        "source_id": "recall:F"
+      }
+    },
+    "G": {
+      "wikitext": {
+        "validation": {
+          "nll": 4.334910594153119,
+          "next_token_accuracy": 0.31434507065024087,
+          "scored_targets": 247416,
+          "scored_bytes": 1145546
+        },
+        "test": {
+          "nll": 4.337739916449339,
+          "next_token_accuracy": 0.317747842470345,
+          "scored_targets": 283426,
+          "scored_bytes": 1289122
+        },
+        "source_id": "wikitext:G"
+      },
+      "recall": {
+        "validation": {
+          "exact_set_accuracy": 0.55830078125,
+          "examples": 61440,
+          "queries": 983040,
+          "query_accuracy": 0.601416015625,
+          "query_loss": 1.9774413100513508
+        },
+        "test": {
+          "exact_set_accuracy": 0.5595540364583333,
+          "examples": 61440,
+          "queries": 983040,
+          "query_accuracy": 0.6013203938802083,
+          "query_loss": 1.9772992102841271
+        },
+        "source_id": "recall:G"
+      }
+    },
+    "H": {
+      "wikitext": {
+        "validation": {
+          "nll": 4.325031820399556,
+          "next_token_accuracy": 0.3165922979920458,
+          "scored_targets": 247416,
+          "scored_bytes": 1145546
+        },
+        "test": {
+          "nll": 4.3334059315161575,
+          "next_token_accuracy": 0.31810066825203054,
+          "scored_targets": 283426,
+          "scored_bytes": 1289122
+        },
+        "source_id": "wikitext:H"
+      },
+      "recall": {
+        "validation": {
+          "exact_set_accuracy": 0.5764811197916667,
+          "examples": 61440,
+          "queries": 983040,
+          "query_accuracy": 0.6036478678385416,
+          "query_loss": 1.9725871338142194
+        },
+        "test": {
+          "exact_set_accuracy": 0.5760416666666667,
+          "examples": 61440,
+          "queries": 983040,
+          "query_accuracy": 0.6034189860026041,
+          "query_loss": 1.973039640503551
+        },
+        "source_id": "recall:H"
+      }
+    },
+    "dense_attention": {
+      "wikitext": {
+        "validation": {
+          "nll": 4.357241831452708,
+          "next_token_accuracy": 0.31387622465806575,
+          "scored_targets": 247416,
+          "scored_bytes": 1145546
+        },
+        "test": {
+          "nll": 4.362481402308412,
+          "next_token_accuracy": 0.31474176681038435,
+          "scored_targets": 283426,
+          "scored_bytes": 1289122
+        },
+        "source_id": "wikitext:dense_attention"
+      },
+      "recall": {
+        "validation": {
+          "exact_set_accuracy": 0.5866373697916667,
+          "examples": 61440,
+          "queries": 983040,
+          "query_accuracy": 0.6050954182942708,
+          "query_loss": 1.9860855389114476
+        },
+        "test": {
+          "exact_set_accuracy": 0.5870279947916667,
+          "examples": 61440,
+          "queries": 983040,
+          "query_accuracy": 0.6050303141276042,
+          "query_loss": 1.9861567353050609
+        },
+        "source_id": "recall:dense_attention"
+      }
+    },
+    "fixed_k8": {
+      "wikitext": {
+        "validation": {
+          "nll": 4.366371201903026,
+          "next_token_accuracy": 0.3124494778025673,
+          "scored_targets": 247416,
+          "scored_bytes": 1145546
+        },
+        "test": {
+          "nll": 4.379993436217285,
+          "next_token_accuracy": 0.31327753981638945,
+          "scored_targets": 283426,
+          "scored_bytes": 1289122
+        },
+        "source_id": "wikitext:fixed_k8"
+      },
+      "recall": {
+        "validation": {
+          "exact_set_accuracy": 0.5524088541666666,
+          "examples": 61440,
+          "queries": 983040,
+          "query_accuracy": 0.5994089762369792,
+          "query_loss": 2.0585896087437505
+        },
+        "test": {
+          "exact_set_accuracy": 0.5538411458333333,
+          "examples": 61440,
+          "queries": 983040,
+          "query_accuracy": 0.59974365234375,
+          "query_loss": 2.057441217191566
+        },
+        "source_id": "recall:fixed_k8"
+      }
+    },
+    "wiki_forward": {
+      "wikitext": {
+        "validation": {
+          "nll": 4.325031820399556,
+          "next_token_accuracy": 0.3165922979920458,
+          "scored_targets": 247416,
+          "scored_bytes": 1145546
+        },
+        "test": {
+          "nll": 4.3334059315161575,
+          "next_token_accuracy": 0.31810066825203054,
+          "scored_targets": 283426,
+          "scored_bytes": 1289122
+        },
+        "source_id": "wikitext:H"
+      },
+      "recall": {
+        "validation": {
+          "exact_set_accuracy": 0.5764811197916667,
+          "examples": 61440,
+          "queries": 983040,
+          "query_accuracy": 0.6036478678385416,
+          "query_loss": 1.9725871338142194
+        },
+        "test": {
+          "exact_set_accuracy": 0.5760416666666667,
+          "examples": 61440,
+          "queries": 983040,
+          "query_accuracy": 0.6034189860026041,
+          "query_loss": 1.973039640503551
+        },
+        "source_id": "recall:H"
+      }
+    },
+    "recall_forward": {
+      "wikitext": {
+        "validation": {
+          "nll": 4.3304246840854885,
+          "next_token_accuracy": 0.3155293109580625,
+          "scored_targets": 247416,
+          "scored_bytes": 1145546
+        },
+        "test": {
+          "nll": 4.344434065533888,
+          "next_token_accuracy": 0.31667525209402103,
+          "scored_targets": 283426,
+          "scored_bytes": 1289122
+        },
+        "source_id": "wikitext:D"
+      },
+      "recall": {
+        "validation": {
+          "exact_set_accuracy": 0.570947265625,
+          "examples": 61440,
+          "queries": 983040,
+          "query_accuracy": 0.6031494140625,
+          "query_loss": 1.9627839727936893
+        },
+        "test": {
+          "exact_set_accuracy": 0.5720540364583333,
+          "examples": 61440,
+          "queries": 983040,
+          "query_accuracy": 0.6033538818359375,
+          "query_loss": 1.9625327169963687
+        },
+        "source_id": "recall:D"
+      }
+    },
+    "balanced": {
+      "wikitext": {
+        "validation": {
+          "nll": 4.326184697844538,
+          "next_token_accuracy": 0.31636191677175285,
+          "scored_targets": 247416,
+          "scored_bytes": 1145546
+        },
+        "test": {
+          "nll": 4.338881680404729,
+          "next_token_accuracy": 0.31726447114943584,
+          "scored_targets": 283426,
+          "scored_bytes": 1289122
+        },
+        "source_id": "wikitext:F"
+      },
+      "recall": {
+        "validation": {
+          "exact_set_accuracy": 0.5703125,
+          "examples": 61440,
+          "queries": 983040,
+          "query_accuracy": 0.6027180989583333,
+          "query_loss": 1.9662766311642674
+        },
+        "test": {
+          "exact_set_accuracy": 0.570849609375,
+          "examples": 61440,
+          "queries": 983040,
+          "query_accuracy": 0.6027313232421875,
+          "query_loss": 1.9658338887490876
+        },
+        "source_id": "recall:F"
+      }
+    },
+    "hybrid_native_k8": {
+      "wikitext": {
+        "source_id": "wikitext:hybrid_native_k8",
+        "validation": {
+          "nll": 4.440121128359679,
+          "next_token_accuracy": 0.3056997122255634,
+          "scored_targets": 247416,
+          "scored_bytes": 1145546
+        },
+        "test": {
+          "nll": 4.45031211109916,
+          "next_token_accuracy": 0.306880808394431,
+          "scored_targets": 283426,
+          "scored_bytes": 1289122
+        }
+      },
+      "recall": {
+        "source_id": "recall:hybrid_native_k8",
+        "validation": {
+          "query_loss": 2.043369248428947,
+          "query_accuracy": 0.6029164632161458,
+          "exact_set_accuracy": 0.5628743489583333,
+          "examples": 61440,
+          "queries": 983040
+        },
+        "test": {
+          "query_loss": 2.0431395416129514,
+          "query_accuracy": 0.6028981526692708,
+          "exact_set_accuracy": 0.5628092447916667,
+          "examples": 61440,
+          "queries": 983040
+        }
+      }
+    },
+    "hybrid_fixed_k8": {
+      "wikitext": {
+        "source_id": "wikitext:hybrid_fixed_k8",
+        "validation": {
+          "nll": 4.3534064741113365,
+          "next_token_accuracy": 0.3141187312057426,
+          "scored_targets": 247416,
+          "scored_bytes": 1145546
+        },
+        "test": {
+          "nll": 4.363565034856844,
+          "next_token_accuracy": 0.3151722142640407,
+          "scored_targets": 283426,
+          "scored_bytes": 1289122
+        }
+      },
+      "recall": {
+        "source_id": "recall:hybrid_fixed_k8",
+        "validation": {
+          "query_loss": 2.033725094243194,
+          "query_accuracy": 0.5999532063802083,
+          "exact_set_accuracy": 0.5533365885416667,
+          "examples": 61440,
+          "queries": 983040
+        },
+        "test": {
+          "query_loss": 2.033651775928926,
+          "query_accuracy": 0.5999552408854166,
+          "exact_set_accuracy": 0.5545735677083333,
+          "examples": 61440,
+          "queries": 983040
+        }
+      }
+    },
+    "hybrid_recall_forward": {
+      "wikitext": {
+        "source_id": "wikitext:hybrid_recall_forward",
+        "validation": {
+          "nll": 4.333708313375092,
+          "next_token_accuracy": 0.3159860316228538,
+          "scored_targets": 247416,
+          "scored_bytes": 1145546
+        },
+        "test": {
+          "nll": 4.340410790819573,
+          "next_token_accuracy": 0.3170316061335234,
+          "scored_targets": 283426,
+          "scored_bytes": 1289122
+        }
+      },
+      "recall": {
+        "source_id": "recall:hybrid_recall_forward",
+        "validation": {
+          "query_loss": 1.9845732804771614,
+          "query_accuracy": 0.6026448567708333,
+          "exact_set_accuracy": 0.5700520833333333,
+          "examples": 61440,
+          "queries": 983040
+        },
+        "test": {
+          "query_loss": 1.9842366931199347,
+          "query_accuracy": 0.6025990804036458,
+          "exact_set_accuracy": 0.5707194010416666,
+          "examples": 61440,
+          "queries": 983040
+        }
+      }
+    },
+    "hybrid_balanced": {
+      "wikitext": {
+        "source_id": "wikitext:hybrid_balanced",
+        "validation": {
+          "nll": 4.327903642221786,
+          "next_token_accuracy": 0.31654783845830503,
+          "scored_targets": 247416,
+          "scored_bytes": 1145546
+        },
+        "test": {
+          "nll": 4.327877032645178,
+          "next_token_accuracy": 0.3178748597517518,
+          "scored_targets": 283426,
+          "scored_bytes": 1289122
+        }
+      },
+      "recall": {
+        "source_id": "recall:hybrid_balanced",
+        "validation": {
+          "query_loss": 1.9935187891707453,
+          "query_accuracy": 0.6030131022135417,
+          "exact_set_accuracy": 0.5695963541666667,
+          "examples": 61440,
+          "queries": 983040
+        },
+        "test": {
+          "query_loss": 1.9929656398941613,
+          "query_accuracy": 0.6031229654947917,
+          "exact_set_accuracy": 0.5715657552083333,
+          "examples": 61440,
+          "queries": 983040
+        }
+      }
+    },
+    "hybrid_wiki_forward": {
+      "wikitext": {
+        "source_id": "wikitext:hybrid_wiki_forward",
+        "validation": {
+          "nll": 4.330465273293275,
+          "next_token_accuracy": 0.31538784880525106,
+          "scored_targets": 247416,
+          "scored_bytes": 1145546
+        },
+        "test": {
+          "nll": 4.3324290882026695,
+          "next_token_accuracy": 0.3171797929618313,
+          "scored_targets": 283426,
+          "scored_bytes": 1289122
+        }
+      },
+      "recall": {
+        "source_id": "recall:hybrid_wiki_forward",
+        "validation": {
+          "query_loss": 1.9808224941371615,
+          "query_accuracy": 0.6028635660807292,
+          "exact_set_accuracy": 0.5713216145833333,
+          "examples": 61440,
+          "queries": 983040
+        },
+        "test": {
+          "query_loss": 1.9807261624624213,
+          "query_accuracy": 0.6029215494791667,
+          "exact_set_accuracy": 0.5719889322916667,
+          "examples": 61440,
+          "queries": 983040
+        }
+      }
+    },
+    "native_k8": {
+      "wikitext": {
+        "source_id": "wikitext:native_k8",
+        "validation": {
+          "nll": 4.469784728153318,
+          "next_token_accuracy": 0.3010355029585799,
+          "scored_targets": 247416,
+          "scored_bytes": 1145546
+        },
+        "test": {
+          "nll": 4.482057562999111,
+          "next_token_accuracy": 0.302788029326879,
+          "scored_targets": 283426,
+          "scored_bytes": 1289122
+        }
+      },
+      "recall": {
+        "source_id": "recall:native_k8",
+        "validation": {
+          "query_loss": 2.133292438320738,
+          "query_accuracy": 0.5768646240234375,
+          "exact_set_accuracy": 0.44890950520833334,
+          "examples": 61440,
+          "queries": 983040
+        },
+        "test": {
+          "query_loss": 2.1319903950413086,
+          "query_accuracy": 0.5769765218098958,
+          "exact_set_accuracy": 0.448583984375,
+          "examples": 61440,
+          "queries": 983040
+        }
+      }
+    }
+  },
+  "average_main_effects": {
+    "staged_minus_direct": {
+      "wikitext_test_nll": -0.0032935162604996737,
+      "recall_test_loss": -0.0070519546700703595,
+      "recall_test_exact_set_accuracy_pp": 1.108805338541663
+    },
+    "rho4_minus_rho1": {
+      "wikitext_test_nll": -0.0018623492403688768,
+      "recall_test_loss": -0.0009205913172157798,
+      "recall_test_exact_set_accuracy_pp": 0.7971191406250022
+    },
+    "asymmetry4_minus_asymmetry1": {
+      "wikitext_test_nll": -0.0076654575297265826,
+      "recall_test_loss": 0.007277866023931323,
+      "recall_test_exact_set_accuracy_pp": -0.2640787760416652
+    }
+  },
+  "headline_endpoint_count": 22,
+  "primary_metrics": {
+    "wikitext": "nll",
+    "recall": "exact_set_accuracy"
+  },
+  "primary_arms": [
+    "fixed_k8",
+    "wiki_forward",
+    "recall_forward",
+    "G",
+    "C"
+  ]
+}

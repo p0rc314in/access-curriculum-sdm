@@ -1,0 +1,517 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {
+      "source_repository": "residualized-sdm-routing",
+      "source_commit": "aa5393d4939dd29965d062b45864355dcc635fa7",
+      "source_path": "LICENSE",
+      "source_sha256": "9944ca176e97bd622088262822ced605fcfdcd6e2a879abf4c6a1874d9cb4d01",
+      "destination": "LICENSE",
+      "extracted_sha256": "9944ca176e97bd622088262822ced605fcfdcd6e2a879abf4c6a1874d9cb4d01"
+    },
+    {
+      "source_repository": "residualized-sdm-routing",
+      "source_commit": "aa5393d4939dd29965d062b45864355dcc635fa7",
+      "source_path": "reproduction/config.py",
+      "source_sha256": "ddeeba32e5071ba28cbd9be40b56c02b06bf56ca531e09d7ba6561dcf3c7e764",
+      "destination": "reproduction/config.py",
+      "extracted_sha256": "ddeeba32e5071ba28cbd9be40b56c02b06bf56ca531e09d7ba6561dcf3c7e764"
+    },
+    {
+      "source_repository": "residualized-sdm-routing",
+      "source_commit": "aa5393d4939dd29965d062b45864355dcc635fa7",
+      "source_path": "reproduction/model.py",
+      "source_sha256": "218fc903bf005c47196e5aa296b45cba819328893f2a82a657b4ec8409d29e5c",
+      "destination": "reproduction/model.py",
+      "extracted_sha256": "218fc903bf005c47196e5aa296b45cba819328893f2a82a657b4ec8409d29e5c"
+    },
+    {
+      "source_repository": "residualized-sdm-routing",
+      "source_commit": "aa5393d4939dd29965d062b45864355dcc635fa7",
+      "source_path": "reproduction/factory.py",
+      "source_sha256": "c97398e2db1c0ef39db67fc7b3129bfbf620d76feb3ee26d5c153097d305fdf2",
+      "destination": "reproduction/factory.py",
+      "extracted_sha256": "c97398e2db1c0ef39db67fc7b3129bfbf620d76feb3ee26d5c153097d305fdf2"
+    },
+    {
+      "source_repository": "residualized-sdm-routing",
+      "source_commit": "aa5393d4939dd29965d062b45864355dcc635fa7",
+      "source_path": "reproduction/recall_model.py",
+      "source_sha256": "60f45ec0a443059e62984dede0e7f9ff48bbd2a795cd5807c083ebda27691c8e",
+      "destination": "reproduction/recall_model.py",
+      "extracted_sha256": "60f45ec0a443059e62984dede0e7f9ff48bbd2a795cd5807c083ebda27691c8e"
+    },
+    {
+      "source_repository": "residualized-sdm-routing",
+      "source_commit": "aa5393d4939dd29965d062b45864355dcc635fa7",
+      "source_path": "reproduction/recall_data.py",
+      "source_sha256": "4f4481aa8b84b30b48a75f06464e330402d21762fc75668465993586bc1a1355",
+      "destination": "reproduction/recall_data.py",
+      "extracted_sha256": "4f4481aa8b84b30b48a75f06464e330402d21762fc75668465993586bc1a1355"
+    },
+    {
+      "source_repository": "residualized-sdm-routing",
+      "source_commit": "aa5393d4939dd29965d062b45864355dcc635fa7",
+      "source_path": "reproduction/recall_generate.py",
+      "source_sha256": "763c2a357efc55194f5800798aebfd51f6c2686317dce7d88ab4a91caf0091c1",
+      "destination": "reproduction/recall_generate.py",
+      "extracted_sha256": "763c2a357efc55194f5800798aebfd51f6c2686317dce7d88ab4a91caf0091c1"
+    },
+    {
+      "source_repository": "residualized-sdm-routing",
+      "source_commit": "aa5393d4939dd29965d062b45864355dcc635fa7",
+      "source_path": "reproduction/wikitext103_coverage.py",
+      "source_sha256": "32d204f4f4ad64b9cd1c35a1b1e84680effb515269fa830be0093eca6416692b",
+      "destination": "reproduction/wikitext103_coverage.py",
+      "extracted_sha256": "32d204f4f4ad64b9cd1c35a1b1e84680effb515269fa830be0093eca6416692b"
+    },
+    {
+      "source_repository": "residualized-sdm-routing",
+      "source_commit": "aa5393d4939dd29965d062b45864355dcc635fa7",
+      "source_path": "reproduction/train_wikitext.py",
+      "source_sha256": "7fc702fdb5dae460e9e72f50009e73d09c3497d7a1628075380d1f90b2c23390",
+      "destination": "reproduction/train_wikitext.py",
+      "extracted_sha256": "3143ea5c4e65a62df530abb5eb2c31348614ba0f622d0936690de8ba46dcacd6",
+      "adaptation": "Add explicit curriculum identity, install corrected access paths, apply recorded access at each step, and guard immutable input paths. Preserve the historical model, initialization, BF16 gradient accumulation, FP32-master AdamW and evaluation. Restore the checkpoint training curve atomically before appending resumed measurements. Verify complete BF16 parameter and buffer initialization against the historical reference instead of platform-dependent FP32 common-parameter bytes."
+    },
+    {
+      "source_repository": "residualized-sdm-routing",
+      "source_commit": "aa5393d4939dd29965d062b45864355dcc635fa7",
+      "source_path": "reproduction/train_recall.py",
+      "source_sha256": "35e22bf9d97baa4b0606eeb18a3c487dceebfa9a2cf0791c1681e20355878e4a",
+      "destination": "reproduction/train_recall.py",
+      "extracted_sha256": "3c3c363282b9801c4c0ac82b6a1a4f9c4a92afb09be48c22f0b541f422da300e",
+      "adaptation": "Install and apply recorded curricula, enforce common initialization and explicit terminal access, and preserve historical full-batch (32) BF16 optimization. Include scheduled access in checkpoint inference. Use the matched 100-step warmup and constant learning rate for every arm. Enforce the recorded common initialization separately for B8 and B7A1. Verify complete BF16 parameter and buffer initialization against the historical reference instead of platform-dependent FP32 common-parameter bytes."
+    },
+    {
+      "source_repository": "residualized-sdm-routing",
+      "source_commit": "aa5393d4939dd29965d062b45864355dcc635fa7",
+      "source_path": "scripts/prepare_recall.py",
+      "source_sha256": "51f919ac221633ed4baac745ae911da658a067da4bb5455c9befe63f666b847f",
+      "destination": "scripts/prepare_recall.py",
+      "extracted_sha256": "51f919ac221633ed4baac745ae911da658a067da4bb5455c9befe63f666b847f"
+    },
+    {
+      "source_repository": "residualized-sdm-routing",
+      "source_commit": "aa5393d4939dd29965d062b45864355dcc635fa7",
+      "source_path": "scripts/check_prepared_data.py",
+      "source_sha256": "5d239e708b94cf1b1561a8a1b2aef2b3de9631c2c386412d3e0072acbfb4f587",
+      "destination": "scripts/check_prepared_data.py",
+      "extracted_sha256": "5d239e708b94cf1b1561a8a1b2aef2b3de9631c2c386412d3e0072acbfb4f587"
+    },
+    {
+      "source_repository": "residualized-sdm-routing",
+      "source_commit": "aa5393d4939dd29965d062b45864355dcc635fa7",
+      "source_path": "scripts/prepare_canonical_wikitext103.py",
+      "source_sha256": "48e4fd230081c628dc9312e885a6944dafa97a101c7aac30fa8d31194c5ab262",
+      "destination": "scripts/prepare_canonical_wikitext103.py",
+      "extracted_sha256": "48e4fd230081c628dc9312e885a6944dafa97a101c7aac30fa8d31194c5ab262"
+    },
+    {
+      "source_repository": "residualized-sdm-routing",
+      "source_commit": "aa5393d4939dd29965d062b45864355dcc635fa7",
+      "source_path": "shared_residual_routing/router.py",
+      "source_sha256": "f5be578f69033e14148c09a6df62f9dbe899ce1c65a81bc479fc313256fb3a37",
+      "destination": "shared_residual_routing/router.py",
+      "extracted_sha256": "f5be578f69033e14148c09a6df62f9dbe899ce1c65a81bc479fc313256fb3a37"
+    },
+    {
+      "source_repository": "residualized-sdm-routing",
+      "source_commit": "aa5393d4939dd29965d062b45864355dcc635fa7",
+      "source_path": "shared_residual_routing/__init__.py",
+      "source_sha256": "cddc8fb51e4def5c7aa3366d0307d7a2d6595c8ae8835254f1293cac958feb51",
+      "destination": "shared_residual_routing/__init__.py",
+      "extracted_sha256": "cddc8fb51e4def5c7aa3366d0307d7a2d6595c8ae8835254f1293cac958feb51"
+    },
+    {
+      "source_repository": "residualized-sdm-routing",
+      "source_commit": "aa5393d4939dd29965d062b45864355dcc635fa7",
+      "source_path": "third_party/runtime/LICENSE",
+      "source_sha256": "3711f963c05d0be80d53e5923308a6dee31b203da23435c9cfb7c7b6e4dd5e19",
+      "destination": "third_party/runtime/LICENSE",
+      "extracted_sha256": "3711f963c05d0be80d53e5923308a6dee31b203da23435c9cfb7c7b6e4dd5e19"
+    },
+    {
+      "source_repository": "residualized-sdm-routing",
+      "source_commit": "aa5393d4939dd29965d062b45864355dcc635fa7",
+      "source_path": "third_party/runtime/LICENSE-LINGUA",
+      "source_sha256": "86c341b36966e26cd7be9281daffa95e1279ec12662ee5319e9ace320e9db74b",
+      "destination": "third_party/runtime/LICENSE-LINGUA",
+      "extracted_sha256": "86c341b36966e26cd7be9281daffa95e1279ec12662ee5319e9ace320e9db74b"
+    },
+    {
+      "source_repository": "residualized-sdm-routing",
+      "source_commit": "aa5393d4939dd29965d062b45864355dcc635fa7",
+      "source_path": "third_party/runtime/apps/__init__.py",
+      "source_sha256": "5f0805e2467c2edd759b05a42763f809b98cdabc21e61c98fdf3c4100188731a",
+      "destination": "third_party/runtime/apps/__init__.py",
+      "extracted_sha256": "5f0805e2467c2edd759b05a42763f809b98cdabc21e61c98fdf3c4100188731a"
+    },
+    {
+      "source_repository": "residualized-sdm-routing",
+      "source_commit": "aa5393d4939dd29965d062b45864355dcc635fa7",
+      "source_path": "third_party/runtime/apps/main/__init__.py",
+      "source_sha256": "abe836cd309d15d814afb3cf18e6eb7abd0726ea6ecc3091335bb82d7236c379",
+      "destination": "third_party/runtime/apps/main/__init__.py",
+      "extracted_sha256": "abe836cd309d15d814afb3cf18e6eb7abd0726ea6ecc3091335bb82d7236c379"
+    },
+    {
+      "source_repository": "residualized-sdm-routing",
+      "source_commit": "aa5393d4939dd29965d062b45864355dcc635fa7",
+      "source_path": "third_party/runtime/apps/main/generate.py",
+      "source_sha256": "dfa9fd6eec1d793c71c9fae289b816335fd591bde1bca6c57740f2aead223b68",
+      "destination": "third_party/runtime/apps/main/generate.py",
+      "extracted_sha256": "dfa9fd6eec1d793c71c9fae289b816335fd591bde1bca6c57740f2aead223b68"
+    },
+    {
+      "source_repository": "residualized-sdm-routing",
+      "source_commit": "aa5393d4939dd29965d062b45864355dcc635fa7",
+      "source_path": "third_party/runtime/apps/main/transformer.py",
+      "source_sha256": "05e1f725e4ff9834ceddf742d96a51525f34f111f21e529f2bf4eedec5855425",
+      "destination": "third_party/runtime/apps/main/transformer.py",
+      "extracted_sha256": "05e1f725e4ff9834ceddf742d96a51525f34f111f21e529f2bf4eedec5855425"
+    },
+    {
+      "source_repository": "residualized-sdm-routing",
+      "source_commit": "aa5393d4939dd29965d062b45864355dcc635fa7",
+      "source_path": "third_party/runtime/capacity_independent_sdm/__init__.py",
+      "source_sha256": "191ecfac561cc11ede696f8d4c009d6c88b7ef189ea81305afd046cc2cd721a1",
+      "destination": "third_party/runtime/capacity_independent_sdm/__init__.py",
+      "extracted_sha256": "191ecfac561cc11ede696f8d4c009d6c88b7ef189ea81305afd046cc2cd721a1"
+    },
+    {
+      "source_repository": "residualized-sdm-routing",
+      "source_commit": "aa5393d4939dd29965d062b45864355dcc635fa7",
+      "source_path": "third_party/runtime/capacity_independent_sdm/accounting.py",
+      "source_sha256": "5ebe85e08f87735b8ea09c8312f6424703de61d1cc551ab376b7026573f41a00",
+      "destination": "third_party/runtime/capacity_independent_sdm/accounting.py",
+      "extracted_sha256": "5ebe85e08f87735b8ea09c8312f6424703de61d1cc551ab376b7026573f41a00"
+    },
+    {
+      "source_repository": "residualized-sdm-routing",
+      "source_commit": "aa5393d4939dd29965d062b45864355dcc635fa7",
+      "source_path": "third_party/runtime/capacity_independent_sdm/addresses.py",
+      "source_sha256": "4ff1d9431eee08efb390f4ae55a471c434c525a4fbbca982255050bdef98bb27",
+      "destination": "third_party/runtime/capacity_independent_sdm/addresses.py",
+      "extracted_sha256": "4ff1d9431eee08efb390f4ae55a471c434c525a4fbbca982255050bdef98bb27"
+    },
+    {
+      "source_repository": "residualized-sdm-routing",
+      "source_commit": "aa5393d4939dd29965d062b45864355dcc635fa7",
+      "source_path": "third_party/runtime/capacity_independent_sdm/cuda_state.py",
+      "source_sha256": "2dd0d8018a5e1d4143056717f98e1ff208569316f6aef704498064130f3d5a9e",
+      "destination": "third_party/runtime/capacity_independent_sdm/cuda_state.py",
+      "extracted_sha256": "2dd0d8018a5e1d4143056717f98e1ff208569316f6aef704498064130f3d5a9e"
+    },
+    {
+      "source_repository": "residualized-sdm-routing",
+      "source_commit": "aa5393d4939dd29965d062b45864355dcc635fa7",
+      "source_path": "third_party/runtime/capacity_independent_sdm/execution.py",
+      "source_sha256": "26ab22a2e8ad7af655da0b262d73f26b1e4a946801e53cd4e3cea1a4cf2fbfb7",
+      "destination": "third_party/runtime/capacity_independent_sdm/execution.py",
+      "extracted_sha256": "26ab22a2e8ad7af655da0b262d73f26b1e4a946801e53cd4e3cea1a4cf2fbfb7"
+    },
+    {
+      "source_repository": "residualized-sdm-routing",
+      "source_commit": "aa5393d4939dd29965d062b45864355dcc635fa7",
+      "source_path": "third_party/runtime/capacity_independent_sdm/extensions/__init__.py",
+      "source_sha256": "ab8736c59a680d2496c35d5a5128dae45297849ed365135fce143b1d90422833",
+      "destination": "third_party/runtime/capacity_independent_sdm/extensions/__init__.py",
+      "extracted_sha256": "ab8736c59a680d2496c35d5a5128dae45297849ed365135fce143b1d90422833"
+    },
+    {
+      "source_repository": "residualized-sdm-routing",
+      "source_commit": "aa5393d4939dd29965d062b45864355dcc635fa7",
+      "source_path": "third_party/runtime/capacity_independent_sdm/extensions/factorized_prior.py",
+      "source_sha256": "e015bf3ff1a72704f4968c66a468d02fff85e17c6be0d6174aecbc63276e1243",
+      "destination": "third_party/runtime/capacity_independent_sdm/extensions/factorized_prior.py",
+      "extracted_sha256": "e015bf3ff1a72704f4968c66a468d02fff85e17c6be0d6174aecbc63276e1243"
+    },
+    {
+      "source_repository": "residualized-sdm-routing",
+      "source_commit": "aa5393d4939dd29965d062b45864355dcc635fa7",
+      "source_path": "third_party/runtime/capacity_independent_sdm/extensions/geometry.py",
+      "source_sha256": "d73f48a3eb676bee2edac73c81907405fb5f22e9b04b18eac5f8181e7854961b",
+      "destination": "third_party/runtime/capacity_independent_sdm/extensions/geometry.py",
+      "extracted_sha256": "d73f48a3eb676bee2edac73c81907405fb5f22e9b04b18eac5f8181e7854961b"
+    },
+    {
+      "source_repository": "residualized-sdm-routing",
+      "source_commit": "aa5393d4939dd29965d062b45864355dcc635fa7",
+      "source_path": "third_party/runtime/capacity_independent_sdm/extensions/objectives.py",
+      "source_sha256": "28b580209f58d1b8dedd81f403b6f7dd701861532a79bcb35e58efc0fd191374",
+      "destination": "third_party/runtime/capacity_independent_sdm/extensions/objectives.py",
+      "extracted_sha256": "28b580209f58d1b8dedd81f403b6f7dd701861532a79bcb35e58efc0fd191374"
+    },
+    {
+      "source_repository": "residualized-sdm-routing",
+      "source_commit": "aa5393d4939dd29965d062b45864355dcc635fa7",
+      "source_path": "third_party/runtime/capacity_independent_sdm/extensions/routing.py",
+      "source_sha256": "a16908ebf977e7af4646075c1184207e84b726af9b32b9ba0359c989c6ba4985",
+      "destination": "third_party/runtime/capacity_independent_sdm/extensions/routing.py",
+      "extracted_sha256": "a16908ebf977e7af4646075c1184207e84b726af9b32b9ba0359c989c6ba4985"
+    },
+    {
+      "source_repository": "residualized-sdm-routing",
+      "source_commit": "aa5393d4939dd29965d062b45864355dcc635fa7",
+      "source_path": "third_party/runtime/capacity_independent_sdm/integration.py",
+      "source_sha256": "2fdc3a834207519264087bb30d2f5e1e96b5d7ef8c2bb342346958c35f9e67ed",
+      "destination": "third_party/runtime/capacity_independent_sdm/integration.py",
+      "extracted_sha256": "2fdc3a834207519264087bb30d2f5e1e96b5d7ef8c2bb342346958c35f9e67ed"
+    },
+    {
+      "source_repository": "residualized-sdm-routing",
+      "source_commit": "aa5393d4939dd29965d062b45864355dcc635fa7",
+      "source_path": "third_party/runtime/capacity_independent_sdm/kernels.py",
+      "source_sha256": "dcd44d633a8941bc6887b2d316f60ab98d62d9e75e23292ee0ec0d7ed4beaf67",
+      "destination": "third_party/runtime/capacity_independent_sdm/kernels.py",
+      "extracted_sha256": "dcd44d633a8941bc6887b2d316f60ab98d62d9e75e23292ee0ec0d7ed4beaf67"
+    },
+    {
+      "source_repository": "residualized-sdm-routing",
+      "source_commit": "aa5393d4939dd29965d062b45864355dcc635fa7",
+      "source_path": "third_party/runtime/capacity_independent_sdm/priors.py",
+      "source_sha256": "5da88a20521dae90e05d1ab4e5d021416ca31e9fb06cc830d6a91b15ae43ee32",
+      "destination": "third_party/runtime/capacity_independent_sdm/priors.py",
+      "extracted_sha256": "5da88a20521dae90e05d1ab4e5d021416ca31e9fb06cc830d6a91b15ae43ee32"
+    },
+    {
+      "source_repository": "residualized-sdm-routing",
+      "source_commit": "aa5393d4939dd29965d062b45864355dcc635fa7",
+      "source_path": "third_party/runtime/capacity_independent_sdm/production.py",
+      "source_sha256": "d8ab37baed7fb6a10c6c564b2fd407628d4b16605c10827e61b72512214cadd0",
+      "destination": "third_party/runtime/capacity_independent_sdm/production.py",
+      "extracted_sha256": "d8ab37baed7fb6a10c6c564b2fd407628d4b16605c10827e61b72512214cadd0"
+    },
+    {
+      "source_repository": "residualized-sdm-routing",
+      "source_commit": "aa5393d4939dd29965d062b45864355dcc635fa7",
+      "source_path": "third_party/runtime/capacity_independent_sdm/recurrence.py",
+      "source_sha256": "7b776d86daece23c08206a412d6db36e26fcebb300ede5b608aa5b6a6f852080",
+      "destination": "third_party/runtime/capacity_independent_sdm/recurrence.py",
+      "extracted_sha256": "7b776d86daece23c08206a412d6db36e26fcebb300ede5b608aa5b6a6f852080"
+    },
+    {
+      "source_repository": "residualized-sdm-routing",
+      "source_commit": "aa5393d4939dd29965d062b45864355dcc635fa7",
+      "source_path": "third_party/runtime/capacity_independent_sdm/state.py",
+      "source_sha256": "9b8059383fb90f120460b4f97c36d5a1754877943beafde156e0598c1c2532eb",
+      "destination": "third_party/runtime/capacity_independent_sdm/state.py",
+      "extracted_sha256": "9b8059383fb90f120460b4f97c36d5a1754877943beafde156e0598c1c2532eb"
+    },
+    {
+      "source_repository": "residualized-sdm-routing",
+      "source_commit": "aa5393d4939dd29965d062b45864355dcc635fa7",
+      "source_path": "third_party/runtime/lingua/__init__.py",
+      "source_sha256": "abe836cd309d15d814afb3cf18e6eb7abd0726ea6ecc3091335bb82d7236c379",
+      "destination": "third_party/runtime/lingua/__init__.py",
+      "extracted_sha256": "abe836cd309d15d814afb3cf18e6eb7abd0726ea6ecc3091335bb82d7236c379"
+    },
+    {
+      "source_repository": "residualized-sdm-routing",
+      "source_commit": "aa5393d4939dd29965d062b45864355dcc635fa7",
+      "source_path": "third_party/runtime/lingua/optim.py",
+      "source_sha256": "719cdb00263fffe32649b8f5007fa516d9a9a8d72ed8b48e0ec4f6fe415278f2",
+      "destination": "third_party/runtime/lingua/optim.py",
+      "extracted_sha256": "719cdb00263fffe32649b8f5007fa516d9a9a8d72ed8b48e0ec4f6fe415278f2"
+    },
+    {
+      "source_repository": "residualized-sdm-routing",
+      "source_commit": "aa5393d4939dd29965d062b45864355dcc635fa7",
+      "source_path": "third_party/runtime/lingua/probe.py",
+      "source_sha256": "beec14640b84ec97a82a81cfb758f189eeb7ad041331b2eeeca0ba6daa1e0879",
+      "destination": "third_party/runtime/lingua/probe.py",
+      "extracted_sha256": "beec14640b84ec97a82a81cfb758f189eeb7ad041331b2eeeca0ba6daa1e0879"
+    },
+    {
+      "source_repository": "residualized-sdm-routing",
+      "source_commit": "aa5393d4939dd29965d062b45864355dcc635fa7",
+      "source_path": "third_party/runtime/lingua/sparse_delta_memory/__init__.py",
+      "source_sha256": "376171f7553a68a9a2ff403e6c305ff2352e8192a8cdd125145ba7156457fa50",
+      "destination": "third_party/runtime/lingua/sparse_delta_memory/__init__.py",
+      "extracted_sha256": "376171f7553a68a9a2ff403e6c305ff2352e8192a8cdd125145ba7156457fa50"
+    },
+    {
+      "source_repository": "residualized-sdm-routing",
+      "source_commit": "aa5393d4939dd29965d062b45864355dcc635fa7",
+      "source_path": "third_party/runtime/lingua/sparse_delta_memory/cache.py",
+      "source_sha256": "3c529ba708280946cd63d6e95499090f33c04758d9ebfabf40b2ade570f48926",
+      "destination": "third_party/runtime/lingua/sparse_delta_memory/cache.py",
+      "extracted_sha256": "3c529ba708280946cd63d6e95499090f33c04758d9ebfabf40b2ade570f48926"
+    },
+    {
+      "source_repository": "residualized-sdm-routing",
+      "source_commit": "aa5393d4939dd29965d062b45864355dcc635fa7",
+      "source_path": "third_party/runtime/lingua/sparse_delta_memory/cuda/__init__.py",
+      "source_sha256": "abe836cd309d15d814afb3cf18e6eb7abd0726ea6ecc3091335bb82d7236c379",
+      "destination": "third_party/runtime/lingua/sparse_delta_memory/cuda/__init__.py",
+      "extracted_sha256": "abe836cd309d15d814afb3cf18e6eb7abd0726ea6ecc3091335bb82d7236c379"
+    },
+    {
+      "source_repository": "residualized-sdm-routing",
+      "source_commit": "aa5393d4939dd29965d062b45864355dcc635fa7",
+      "source_path": "third_party/runtime/lingua/sparse_delta_memory/cuda/_prebuilt.py",
+      "source_sha256": "18acd96fe2c2e43122bc0107280ee290ff46e9fb32fb483b21b1dc30aa282089",
+      "destination": "third_party/runtime/lingua/sparse_delta_memory/cuda/_prebuilt.py",
+      "extracted_sha256": "18acd96fe2c2e43122bc0107280ee290ff46e9fb32fb483b21b1dc30aa282089"
+    },
+    {
+      "source_repository": "residualized-sdm-routing",
+      "source_commit": "aa5393d4939dd29965d062b45864355dcc635fa7",
+      "source_path": "third_party/runtime/lingua/sparse_delta_memory/cuda/scatter_write_cuda.py",
+      "source_sha256": "e5aa6a4608b355a102c884883a94941d400dff86fdba5edf24cabdafe663821d",
+      "destination": "third_party/runtime/lingua/sparse_delta_memory/cuda/scatter_write_cuda.py",
+      "extracted_sha256": "e5aa6a4608b355a102c884883a94941d400dff86fdba5edf24cabdafe663821d"
+    },
+    {
+      "source_repository": "residualized-sdm-routing",
+      "source_commit": "aa5393d4939dd29965d062b45864355dcc635fa7",
+      "source_path": "third_party/runtime/lingua/sparse_delta_memory/cuda/sparse_ip_cuda.py",
+      "source_sha256": "fae6755fe1970da52d97703cf9222cc851afb1a2b275974961f57cec51c112be",
+      "destination": "third_party/runtime/lingua/sparse_delta_memory/cuda/sparse_ip_cuda.py",
+      "extracted_sha256": "fae6755fe1970da52d97703cf9222cc851afb1a2b275974961f57cec51c112be"
+    },
+    {
+      "source_repository": "residualized-sdm-routing",
+      "source_commit": "aa5393d4939dd29965d062b45864355dcc635fa7",
+      "source_path": "third_party/runtime/lingua/sparse_delta_memory/cuda/warp_coop_gather_async_cuda.py",
+      "source_sha256": "3dd030250b9cb5fa9e188ad3aa38901701cb690c37e1a2798a599f24c141c14d",
+      "destination": "third_party/runtime/lingua/sparse_delta_memory/cuda/warp_coop_gather_async_cuda.py",
+      "extracted_sha256": "3dd030250b9cb5fa9e188ad3aa38901701cb690c37e1a2798a599f24c141c14d"
+    },
+    {
+      "source_repository": "residualized-sdm-routing",
+      "source_commit": "aa5393d4939dd29965d062b45864355dcc635fa7",
+      "source_path": "third_party/runtime/lingua/sparse_delta_memory/cuda/warp_cooperative_gather_cuda.py",
+      "source_sha256": "ba5fae245c537b873c781e66770a40242b7c6d878c36edf12b6c4ed7db2ddf77",
+      "destination": "third_party/runtime/lingua/sparse_delta_memory/cuda/warp_cooperative_gather_cuda.py",
+      "extracted_sha256": "ba5fae245c537b873c781e66770a40242b7c6d878c36edf12b6c4ed7db2ddf77"
+    },
+    {
+      "source_repository": "residualized-sdm-routing",
+      "source_commit": "aa5393d4939dd29965d062b45864355dcc635fa7",
+      "source_path": "third_party/runtime/lingua/sparse_delta_memory/layer.py",
+      "source_sha256": "dcfd34eda932bf8e2b3f0eefb6f10bed13821158a003d9873fc54f5bf94625b8",
+      "destination": "third_party/runtime/lingua/sparse_delta_memory/layer.py",
+      "extracted_sha256": "dcfd34eda932bf8e2b3f0eefb6f10bed13821158a003d9873fc54f5bf94625b8"
+    },
+    {
+      "source_repository": "residualized-sdm-routing",
+      "source_commit": "aa5393d4939dd29965d062b45864355dcc635fa7",
+      "source_path": "third_party/runtime/lingua/sparse_delta_memory/memory_ops.py",
+      "source_sha256": "725cc8f64b330f73be03c6ae9d61ea1a6e096e614170e7bc8a49886edf418aa9",
+      "destination": "third_party/runtime/lingua/sparse_delta_memory/memory_ops.py",
+      "extracted_sha256": "725cc8f64b330f73be03c6ae9d61ea1a6e096e614170e7bc8a49886edf418aa9"
+    },
+    {
+      "source_repository": "residualized-sdm-routing",
+      "source_commit": "aa5393d4939dd29965d062b45864355dcc635fa7",
+      "source_path": "third_party/runtime/lingua/sparse_delta_memory/memory_stats.py",
+      "source_sha256": "1b70ad69a7bdfbb7c9a4ab37b86d2fb24bc5a99a152e47a95c966dd0bf49ff94",
+      "destination": "third_party/runtime/lingua/sparse_delta_memory/memory_stats.py",
+      "extracted_sha256": "1b70ad69a7bdfbb7c9a4ab37b86d2fb24bc5a99a152e47a95c966dd0bf49ff94"
+    },
+    {
+      "source_repository": "residualized-sdm-routing",
+      "source_commit": "aa5393d4939dd29965d062b45864355dcc635fa7",
+      "source_path": "third_party/runtime/lingua/sparse_delta_memory/triton_argsort.py",
+      "source_sha256": "4855cf50a243a722e47df0eede0f71971c8610d9a093b00d9e2c65d4fede09cc",
+      "destination": "third_party/runtime/lingua/sparse_delta_memory/triton_argsort.py",
+      "extracted_sha256": "4855cf50a243a722e47df0eede0f71971c8610d9a093b00d9e2c65d4fede09cc"
+    },
+    {
+      "source_repository": "residualized-sdm-routing",
+      "source_commit": "aa5393d4939dd29965d062b45864355dcc635fa7",
+      "source_path": "third_party/runtime/lingua/transformer.py",
+      "source_sha256": "b2e1532bdbc4a1bf90c7629899b8e8efc8b82fb8f4621cfffc5f0833f2868724",
+      "destination": "third_party/runtime/lingua/transformer.py",
+      "extracted_sha256": "b2e1532bdbc4a1bf90c7629899b8e8efc8b82fb8f4621cfffc5f0833f2868724"
+    },
+    {
+      "source_repository": "residualized-sdm-routing",
+      "source_commit": "aa5393d4939dd29965d062b45864355dcc635fa7",
+      "source_path": "third_party/runtime/manifest.json",
+      "source_sha256": "4ef7a212acb5ba1223cc7e5ed59b1e1032ce12cabbe3e71e656ca5ac1279a789",
+      "destination": "third_party/runtime/manifest.json",
+      "extracted_sha256": "4ef7a212acb5ba1223cc7e5ed59b1e1032ce12cabbe3e71e656ca5ac1279a789"
+    },
+    {
+      "source_repository": "scratch/.worktrees/p2-curriculum-sort-repair-factorial-v1",
+      "source_commit": "cddd0b87a267a4986715b4bf1f9a018b2d0dd87b",
+      "source_path": "paper_sparsity_curriculum/selector.py",
+      "source_sha256": "f990eca00a049398704855c6e77dd005bac676d9b1b745ef68423e67c301a4e2",
+      "destination": "access_curriculum/selector.py",
+      "extracted_sha256": "3d474e0def883ae045bb6852410b2913933fbe1e02af6e9eb701f46f11a68138",
+      "adaptation": "Use local model iterator and remove the diagnostic controller pass-through; preserve the exact streamed selection and tie-breaking code."
+    },
+    {
+      "source_repository": "scratch/.worktrees/p2-curriculum-sort-repair-factorial-v1",
+      "source_commit": "cddd0b87a267a4986715b4bf1f9a018b2d0dd87b",
+      "source_path": "paper_sparsity_curriculum/arbitrary_width.py",
+      "source_sha256": "2d93526b2ef9e47fb8fcbc11651f5dd603b65698a16a73363fe7d720dde6bc4e",
+      "destination": "access_curriculum/arbitrary_width.py",
+      "extracted_sha256": "2d93526b2ef9e47fb8fcbc11651f5dd603b65698a16a73363fe7d720dde6bc4e"
+    },
+    {
+      "source_repository": "scratch/.worktrees/p2-curriculum-sort-repair-factorial-v1",
+      "source_commit": "cddd0b87a267a4986715b4bf1f9a018b2d0dd87b",
+      "source_path": "paper_sparsity_curriculum/arbitrary_width_kernel.py",
+      "source_sha256": "9922350d23403cf674ae40d1394ecd533b73b3086e8ce22a52ceefe85935a2ca",
+      "destination": "access_curriculum/arbitrary_width_kernel.py",
+      "extracted_sha256": "7f2ca1826245b44b0ad7bf402c4359230fd5020acd4c8caab50172be4c22d3ba",
+      "adaptation": "Add explicit derivative-source license notice; numerical kernel unchanged."
+    },
+    {
+      "source_repository": "scratch/.worktrees/p2-curriculum-sort-repair-factorial-v1",
+      "source_commit": "cddd0b87a267a4986715b4bf1f9a018b2d0dd87b",
+      "source_path": "paper_sparsity_curriculum/arbitrary_width_sort.py",
+      "source_sha256": "0b8d4349a3e40697ea052b6eb1aa2f93b399192e8c4121f9a4544bc317f0d5f8",
+      "destination": "access_curriculum/arbitrary_width_sort.py",
+      "extracted_sha256": "0b8d4349a3e40697ea052b6eb1aa2f93b399192e8c4121f9a4544bc317f0d5f8"
+    },
+    {
+      "source_repository": "scratch/.worktrees/p2-curriculum-sort-repair-factorial-v1",
+      "source_commit": "cddd0b87a267a4986715b4bf1f9a018b2d0dd87b",
+      "source_path": "tests/test_selector.py",
+      "source_sha256": "76a4dc83eb4740273f738a0669ef99012c4a74059afb2fb58429b2bd8c55fbb6",
+      "destination": "tests/test_selector.py",
+      "extracted_sha256": "936e30eee72ec875899249925c45c7423616a6e6ab8ba4e1f37e55fde1425b1a",
+      "adaptation": "Update package import paths only."
+    },
+    {
+      "source_repository": "scratch/.worktrees/p2-curriculum-sort-repair-factorial-v1",
+      "source_commit": "cddd0b87a267a4986715b4bf1f9a018b2d0dd87b",
+      "source_path": "tests/test_arbitrary_width_sort.py",
+      "source_sha256": "b103121acd113b8ac106baf0d20ef42907ee8d4fb78b42043487671d1eab17b4",
+      "destination": "tests/test_arbitrary_width_sort.py",
+      "extracted_sha256": "e3daa8ffddab36ca386b51b15d12d320a72f67ee7b3a781cafde4a028cf505eb",
+      "adaptation": "Update package import paths only."
+    },
+    {
+      "source_repository": "scratch/.worktrees/p2-curriculum-sort-repair-factorial-v1",
+      "source_commit": "cddd0b87a267a4986715b4bf1f9a018b2d0dd87b",
+      "source_path": "tests/test_arbitrary_width_recurrence.py",
+      "source_sha256": "3c5a64455c87c7538d38703ebd11ba06949bd7d84d2b14017d4bf7bf08ed974b",
+      "destination": "tests/test_arbitrary_width_recurrence.py",
+      "extracted_sha256": "dfc522b1788eccff686f4f445c123db33cbe273619c8b1e29dcbc8638b24a6d4",
+      "adaptation": "Update package import paths only."
+    }
+  ],
+  "runtime_parity": "All vendored numerical Python code matches the corrected factorial dependency overlay. Differences are optimizer whitespace and an import-error message.",
+  "topology_configuration_sources": [
+    {
+      "source_repository": "scratch/.worktrees/p2-headline-topology-matrix-v1",
+      "source_commit": "2711837ce554158f14a4737bce4ac065ba4d1068",
+      "source_path": "paper_sparsity_curriculum/headline_topology_wikitext_spec.py",
+      "source_sha256": "294008a0d6fb446378da2fe003b56108e1e30afb9ef1266ee8725b9115fff502",
+      "reused": "B7A1 profile, native/residualized parameter totals, common initialization hash, and the five recorded schedules"
+    },
+    {
+      "source_repository": "scratch/.worktrees/p2-headline-topology-matrix-v1",
+      "source_commit": "2711837ce554158f14a4737bce4ac065ba4d1068",
+      "source_path": "paper_sparsity_curriculum/headline_topology_recall_spec.py",
+      "source_sha256": "c5f35c70127851f7a2fd39892e03122f84b2ce5bbce6fa227cc83636a084d666",
+      "reused": "B7A1 profile, native/residualized parameter totals, common initialization hash, and the five recorded schedules"
+    }
+  ]
+}

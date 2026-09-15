@@ -1,0 +1,756 @@
+{
+  "schema_version": 1,
+  "official_sdm_revision": "183e7df809131b80ad4393741029d0f20fc3640b",
+  "evidence_tier": "small_wikitext_plus_recall",
+  "source_results": [
+    {
+      "id": "wikitext:A",
+      "source_repository": "scratch/.worktrees/p2-curriculum-sort-repair-factorial-v1",
+      "source_commit": "cddd0b87a267a4986715b4bf1f9a018b2d0dd87b",
+      "source_path": "results/m5-p2-shared-sort-corrected-curriculum-factorial-depth8-wikitext103-seed0-v1/p2_c32_rho1_a1_r32_w32_direct1k_shared.result.json",
+      "source_sha256": "48614c97f78b517febeb61e7abc041211b6ff1d2c1b15af1bb4ea57e523f63af",
+      "source_arm": "p2_c32_rho1_a1_r32_w32_direct1k_shared",
+      "manifest_sha256": "fc4ef13cbc38070f2d7774dffbfd5be48cab31fe45d6d9995d522fc3bac1dde6",
+      "common_parameter_sha256": "47f42b13c4b3cd3ebcb7a01b42b96d15d2d482a00ffd2debc1cab1cbc9b654fa",
+      "hardware": {
+        "cuda": "12.8",
+        "gpu": "NVIDIA RTX PRO 4500 Blackwell",
+        "numpy": "2.4.3",
+        "python": "3.12.3",
+        "torch": "2.11.0+cu128",
+        "triton": "3.6.0"
+      },
+      "total_seconds": 24935.188290770166
+    },
+    {
+      "id": "recall:A",
+      "source_repository": "scratch/.worktrees/p2-curriculum-sort-repair-factorial-v1",
+      "source_commit": "cddd0b87a267a4986715b4bf1f9a018b2d0dd87b",
+      "source_path": "results/m5-p2-shared-sort-corrected-curriculum-factorial-depth8-recall-seed0-v1/p2_c32_rho1_a1_r32_w32_direct1k_shared/result.compact.json",
+      "source_sha256": "9306d16b3caf08bcc0922ff556c4609f83def2f52302fc48cba665e4163e94ee",
+      "source_arm": "p2_c32_rho1_a1_r32_w32_direct1k_shared",
+      "manifest_sha256": "b0587d62c3ab709c94e37742892451a39463a7d577212b9379bd76d966f97800",
+      "common_parameter_sha256": "c02d9d732e5fe8ad539ac74076acca10ebfce546e1cd246f305d5f1723d689f4",
+      "hardware": {
+        "cuda": "12.8",
+        "gpu": "NVIDIA RTX PRO 4000 Blackwell",
+        "numpy": "2.4.3",
+        "python": "3.12.3",
+        "torch": "2.11.0+cu128",
+        "triton": "3.6.0"
+      },
+      "total_seconds": null
+    },
+    {
+      "id": "wikitext:B",
+      "source_repository": "scratch/.worktrees/p2-curriculum-sort-repair-factorial-v1",
+      "source_commit": "cddd0b87a267a4986715b4bf1f9a018b2d0dd87b",
+      "source_path": "results/m5-p2-shared-sort-corrected-curriculum-factorial-depth8-wikitext103-seed0-v1/p2_c32_rho1_a1_r32_w32_staged4k_shared.result.json",
+      "source_sha256": "f4fe536dc3936aad7a4e90aa41bec03931390d9b3acd920287ba6e36215e96dc",
+      "source_arm": "p2_c32_rho1_a1_r32_w32_staged4k_shared",
+      "manifest_sha256": "fc4ef13cbc38070f2d7774dffbfd5be48cab31fe45d6d9995d522fc3bac1dde6",
+      "common_parameter_sha256": "47f42b13c4b3cd3ebcb7a01b42b96d15d2d482a00ffd2debc1cab1cbc9b654fa",
+      "hardware": {
+        "cuda": "12.8",
+        "gpu": "NVIDIA RTX PRO 4500 Blackwell",
+        "numpy": "2.4.3",
+        "python": "3.12.3",
+        "torch": "2.11.0+cu128",
+        "triton": "3.6.0"
+      },
+      "total_seconds": 24042.820741336793
+    },
+    {
+      "id": "recall:B",
+      "source_repository": "scratch/.worktrees/p2-curriculum-sort-repair-factorial-v1",
+      "source_commit": "cddd0b87a267a4986715b4bf1f9a018b2d0dd87b",
+      "source_path": "results/m5-p2-shared-sort-corrected-curriculum-factorial-depth8-recall-seed0-v1/p2_c32_rho1_a1_r32_w32_staged4k_shared/result.compact.json",
+      "source_sha256": "0591538124a307c0adf514ef671b5f590239489777c6f201a915bf06eccbe741",
+      "source_arm": "p2_c32_rho1_a1_r32_w32_staged4k_shared",
+      "manifest_sha256": "b0587d62c3ab709c94e37742892451a39463a7d577212b9379bd76d966f97800",
+      "common_parameter_sha256": "c02d9d732e5fe8ad539ac74076acca10ebfce546e1cd246f305d5f1723d689f4",
+      "hardware": {
+        "cuda": "12.8",
+        "gpu": "NVIDIA RTX PRO 4000 Blackwell",
+        "numpy": "2.4.3",
+        "python": "3.12.3",
+        "torch": "2.11.0+cu128",
+        "triton": "3.6.0"
+      },
+      "total_seconds": null
+    },
+    {
+      "id": "wikitext:C",
+      "source_repository": "scratch/.worktrees/p2-curriculum-sort-repair-factorial-v1",
+      "source_commit": "cddd0b87a267a4986715b4bf1f9a018b2d0dd87b",
+      "source_path": "results/m5-p2-shared-sort-corrected-curriculum-factorial-depth8-wikitext103-seed0-v1/p2_c32_rho4_a1_r64_w64_direct1k_shared.result.json",
+      "source_sha256": "93ebf1cc8f89b116695dbe74f9cfa36a390d4e54c41b876cb2a8f31706627fdd",
+      "source_arm": "p2_c32_rho4_a1_r64_w64_direct1k_shared",
+      "manifest_sha256": "fc4ef13cbc38070f2d7774dffbfd5be48cab31fe45d6d9995d522fc3bac1dde6",
+      "common_parameter_sha256": "47f42b13c4b3cd3ebcb7a01b42b96d15d2d482a00ffd2debc1cab1cbc9b654fa",
+      "hardware": {
+        "cuda": "12.8",
+        "gpu": "NVIDIA RTX PRO 4500 Blackwell",
+        "numpy": "2.4.3",
+        "python": "3.12.3",
+        "torch": "2.11.0+cu128",
+        "triton": "3.6.0"
+      },
+      "total_seconds": 23951.767120211385
+    },
+    {
+      "id": "recall:C",
+      "source_repository": "scratch/.worktrees/p2-curriculum-sort-repair-factorial-v1",
+      "source_commit": "cddd0b87a267a4986715b4bf1f9a018b2d0dd87b",
+      "source_path": "results/m5-p2-shared-sort-corrected-curriculum-factorial-depth8-recall-seed0-v1/p2_c32_rho4_a1_r64_w64_direct1k_shared/result.compact.json",
+      "source_sha256": "82125702a5739b3d57e1511f86d9f16f3fa4441bc6d74ad1714619a7748d9316",
+      "source_arm": "p2_c32_rho4_a1_r64_w64_direct1k_shared",
+      "manifest_sha256": "b0587d62c3ab709c94e37742892451a39463a7d577212b9379bd76d966f97800",
+      "common_parameter_sha256": "c02d9d732e5fe8ad539ac74076acca10ebfce546e1cd246f305d5f1723d689f4",
+      "hardware": {
+        "cuda": "12.8",
+        "gpu": "NVIDIA RTX PRO 4000 Blackwell",
+        "numpy": "2.4.3",
+        "python": "3.12.3",
+        "torch": "2.11.0+cu128",
+        "triton": "3.6.0"
+      },
+      "total_seconds": null
+    },
+    {
+      "id": "wikitext:D",
+      "source_repository": "scratch/.worktrees/p2-curriculum-sort-repair-factorial-v1",
+      "source_commit": "cddd0b87a267a4986715b4bf1f9a018b2d0dd87b",
+      "source_path": "results/m5-p2-shared-sort-corrected-curriculum-factorial-depth8-wikitext103-seed0-v1/p2_c32_rho4_a1_r64_w64_staged4k_shared.result.json",
+      "source_sha256": "b6adb540c56b8b271f73e8af3b03d272c3e6f73ac84d74feb028eb41e7280ac1",
+      "source_arm": "p2_c32_rho4_a1_r64_w64_staged4k_shared",
+      "manifest_sha256": "fc4ef13cbc38070f2d7774dffbfd5be48cab31fe45d6d9995d522fc3bac1dde6",
+      "common_parameter_sha256": "47f42b13c4b3cd3ebcb7a01b42b96d15d2d482a00ffd2debc1cab1cbc9b654fa",
+      "hardware": {
+        "cuda": "12.8",
+        "gpu": "NVIDIA RTX PRO 4500 Blackwell",
+        "numpy": "2.4.3",
+        "python": "3.12.3",
+        "torch": "2.11.0+cu128",
+        "triton": "3.6.0"
+      },
+      "total_seconds": 24628.02571789897
+    },
+    {
+      "id": "recall:D",
+      "source_repository": "scratch/.worktrees/p2-curriculum-sort-repair-factorial-v1",
+      "source_commit": "cddd0b87a267a4986715b4bf1f9a018b2d0dd87b",
+      "source_path": "results/m5-p2-shared-sort-corrected-curriculum-factorial-depth8-recall-seed0-v1/p2_c32_rho4_a1_r64_w64_staged4k_shared/result.compact.json",
+      "source_sha256": "ffe7290d270698a17222eff8b042c1ad77c96311d5be3ad84023ca210234ac17",
+      "source_arm": "p2_c32_rho4_a1_r64_w64_staged4k_shared",
+      "manifest_sha256": "b0587d62c3ab709c94e37742892451a39463a7d577212b9379bd76d966f97800",
+      "common_parameter_sha256": "c02d9d732e5fe8ad539ac74076acca10ebfce546e1cd246f305d5f1723d689f4",
+      "hardware": {
+        "cuda": "12.8",
+        "gpu": "NVIDIA RTX PRO 4000 Blackwell",
+        "numpy": "2.4.3",
+        "python": "3.12.3",
+        "torch": "2.11.0+cu128",
+        "triton": "3.6.0"
+      },
+      "total_seconds": null
+    },
+    {
+      "id": "wikitext:E",
+      "source_repository": "scratch/.worktrees/p2-curriculum-sort-repair-factorial-v1",
+      "source_commit": "cddd0b87a267a4986715b4bf1f9a018b2d0dd87b",
+      "source_path": "results/m5-p2-shared-sort-corrected-curriculum-factorial-depth8-wikitext103-seed0-v1/p2_c32_rho1_a4_r16_w64_direct1k_shared.result.json",
+      "source_sha256": "c4fc938c4ea13101a7dfbd01ed828d50efb1ec3338454154d4d39b06f4301006",
+      "source_arm": "p2_c32_rho1_a4_r16_w64_direct1k_shared",
+      "manifest_sha256": "fc4ef13cbc38070f2d7774dffbfd5be48cab31fe45d6d9995d522fc3bac1dde6",
+      "common_parameter_sha256": "47f42b13c4b3cd3ebcb7a01b42b96d15d2d482a00ffd2debc1cab1cbc9b654fa",
+      "hardware": {
+        "cuda": "12.8",
+        "gpu": "NVIDIA RTX PRO 4500 Blackwell",
+        "numpy": "2.4.3",
+        "python": "3.12.3",
+        "torch": "2.11.0+cu128",
+        "triton": "3.6.0"
+      },
+      "total_seconds": 27154.40607285034
+    },
+    {
+      "id": "recall:E",
+      "source_repository": "scratch/.worktrees/p2-curriculum-sort-repair-factorial-v1",
+      "source_commit": "cddd0b87a267a4986715b4bf1f9a018b2d0dd87b",
+      "source_path": "results/m5-p2-shared-sort-corrected-curriculum-factorial-depth8-recall-seed0-v1/p2_c32_rho1_a4_r16_w64_direct1k_shared/result.compact.json",
+      "source_sha256": "533c062849fd2a98c35c4d94786ba0bd88605066e195a7469f1d1f396b514777",
+      "source_arm": "p2_c32_rho1_a4_r16_w64_direct1k_shared",
+      "manifest_sha256": "b0587d62c3ab709c94e37742892451a39463a7d577212b9379bd76d966f97800",
+      "common_parameter_sha256": "c02d9d732e5fe8ad539ac74076acca10ebfce546e1cd246f305d5f1723d689f4",
+      "hardware": {
+        "cuda": "12.8",
+        "gpu": "NVIDIA RTX PRO 4000 Blackwell",
+        "numpy": "2.4.3",
+        "python": "3.12.3",
+        "torch": "2.11.0+cu128",
+        "triton": "3.6.0"
+      },
+      "total_seconds": null
+    },
+    {
+      "id": "wikitext:F",
+      "source_repository": "scratch/.worktrees/p2-curriculum-sort-repair-factorial-v1",
+      "source_commit": "cddd0b87a267a4986715b4bf1f9a018b2d0dd87b",
+      "source_path": "results/m5-p2-shared-sort-corrected-curriculum-factorial-depth8-wikitext103-seed0-v1/p2_c32_rho1_a4_r16_w64_staged4k_shared.result.json",
+      "source_sha256": "d76ca445a0f26f4b51d420c34f7e0fd55a3f5b8319ca083363f3f18e4f4f25e7",
+      "source_arm": "p2_c32_rho1_a4_r16_w64_staged4k_shared",
+      "manifest_sha256": "fc4ef13cbc38070f2d7774dffbfd5be48cab31fe45d6d9995d522fc3bac1dde6",
+      "common_parameter_sha256": "47f42b13c4b3cd3ebcb7a01b42b96d15d2d482a00ffd2debc1cab1cbc9b654fa",
+      "hardware": {
+        "cuda": "12.8",
+        "gpu": "NVIDIA RTX PRO 4500 Blackwell",
+        "numpy": "2.4.3",
+        "python": "3.12.3",
+        "torch": "2.11.0+cu128",
+        "triton": "3.6.0"
+      },
+      "total_seconds": 24162.600972514134
+    },
+    {
+      "id": "recall:F",
+      "source_repository": "scratch/.worktrees/p2-curriculum-sort-repair-factorial-v1",
+      "source_commit": "cddd0b87a267a4986715b4bf1f9a018b2d0dd87b",
+      "source_path": "results/m5-p2-shared-sort-corrected-curriculum-factorial-depth8-recall-seed0-v1/p2_c32_rho1_a4_r16_w64_staged4k_shared/result.compact.json",
+      "source_sha256": "5fde14a41f179cb499d62c09f08ed401756bf5003613b563a3ad9ec2120bdc5b",
+      "source_arm": "p2_c32_rho1_a4_r16_w64_staged4k_shared",
+      "manifest_sha256": "b0587d62c3ab709c94e37742892451a39463a7d577212b9379bd76d966f97800",
+      "common_parameter_sha256": "c02d9d732e5fe8ad539ac74076acca10ebfce546e1cd246f305d5f1723d689f4",
+      "hardware": {
+        "cuda": "12.8",
+        "gpu": "NVIDIA RTX PRO 4000 Blackwell",
+        "numpy": "2.4.3",
+        "python": "3.12.3",
+        "torch": "2.11.0+cu128",
+        "triton": "3.6.0"
+      },
+      "total_seconds": null
+    },
+    {
+      "id": "wikitext:G",
+      "source_repository": "scratch/.worktrees/p2-curriculum-axis-continuation-v1",
+      "source_commit": "2332a1808f01000601ce5a34a5629ba33163d48d",
+      "source_path": "results/m5-p2-shared-curriculum-axis-continuation-depth8-wikitext103-seed0-v1/artifacts/1bab83ebe85ac74d63d5406c3a5ba46c9b1d9b2c45a3db394b6eee10d1b1f792.result.json",
+      "source_sha256": "1bab83ebe85ac74d63d5406c3a5ba46c9b1d9b2c45a3db394b6eee10d1b1f792",
+      "source_arm": "p2_c32_pulse1000_r32_w128_shared",
+      "manifest_sha256": "fc4ef13cbc38070f2d7774dffbfd5be48cab31fe45d6d9995d522fc3bac1dde6",
+      "common_parameter_sha256": "47f42b13c4b3cd3ebcb7a01b42b96d15d2d482a00ffd2debc1cab1cbc9b654fa",
+      "hardware": {
+        "cuda": "12.8",
+        "gpu": "NVIDIA GeForce RTX 4090",
+        "numpy": "2.4.3",
+        "python": "3.12.3",
+        "torch": "2.11.0+cu128",
+        "triton": "3.6.0"
+      },
+      "total_seconds": 31522.205003486946
+    },
+    {
+      "id": "recall:G",
+      "source_repository": "scratch/.worktrees/p2-curriculum-sort-repair-factorial-v1",
+      "source_commit": "cddd0b87a267a4986715b4bf1f9a018b2d0dd87b",
+      "source_path": "results/m5-p2-shared-sort-corrected-curriculum-factorial-depth8-recall-seed0-v1/p2_c32_rho4_a4_r32_w128_direct1k_shared/result.compact.json",
+      "source_sha256": "fd9568ff91b72d3e5ebac9d893d48def4d813ffb6c60b6812e70fa0c26059a02",
+      "source_arm": "p2_c32_rho4_a4_r32_w128_direct1k_shared",
+      "manifest_sha256": "b0587d62c3ab709c94e37742892451a39463a7d577212b9379bd76d966f97800",
+      "common_parameter_sha256": "c02d9d732e5fe8ad539ac74076acca10ebfce546e1cd246f305d5f1723d689f4",
+      "hardware": {
+        "cuda": "12.8",
+        "gpu": "NVIDIA RTX PRO 4000 Blackwell",
+        "numpy": "2.4.3",
+        "python": "3.12.3",
+        "torch": "2.11.0+cu128",
+        "triton": "3.6.0"
+      },
+      "total_seconds": null
+    },
+    {
+      "id": "wikitext:H",
+      "source_repository": "scratch/.worktrees/p2-curriculum-sort-repair-factorial-v1",
+      "source_commit": "cddd0b87a267a4986715b4bf1f9a018b2d0dd87b",
+      "source_path": "results/m5-p2-shared-sort-corrected-curriculum-factorial-depth8-wikitext103-seed0-v1/p2_c32_rho4_a4_r32_w128_staged4k_shared.result.json",
+      "source_sha256": "c8bb786b43d47b815e6842935e66b8f5dcc50508e77e67124c0163e13d94f3ed",
+      "source_arm": "p2_c32_rho4_a4_r32_w128_staged4k_shared",
+      "manifest_sha256": "fc4ef13cbc38070f2d7774dffbfd5be48cab31fe45d6d9995d522fc3bac1dde6",
+      "common_parameter_sha256": "47f42b13c4b3cd3ebcb7a01b42b96d15d2d482a00ffd2debc1cab1cbc9b654fa",
+      "hardware": {
+        "cuda": "12.8",
+        "gpu": "NVIDIA RTX PRO 4500 Blackwell",
+        "numpy": "2.4.3",
+        "python": "3.12.3",
+        "torch": "2.11.0+cu128",
+        "triton": "3.6.0"
+      },
+      "total_seconds": 25053.501795755234
+    },
+    {
+      "id": "recall:H",
+      "source_repository": "scratch/.worktrees/p2-curriculum-sort-repair-factorial-v1",
+      "source_commit": "cddd0b87a267a4986715b4bf1f9a018b2d0dd87b",
+      "source_path": "results/m5-p2-shared-sort-corrected-curriculum-factorial-depth8-recall-seed0-v1/p2_c32_rho4_a4_r32_w128_staged4k_shared/result.compact.json",
+      "source_sha256": "82732a8e5ec4a93332b4ad648c1e342785d64c224124e429e19f604dbe9f1bde",
+      "source_arm": "p2_c32_rho4_a4_r32_w128_staged4k_shared",
+      "manifest_sha256": "b0587d62c3ab709c94e37742892451a39463a7d577212b9379bd76d966f97800",
+      "common_parameter_sha256": "c02d9d732e5fe8ad539ac74076acca10ebfce546e1cd246f305d5f1723d689f4",
+      "hardware": {
+        "cuda": "12.8",
+        "gpu": "NVIDIA RTX PRO 4000 Blackwell",
+        "numpy": "2.4.3",
+        "python": "3.12.3",
+        "torch": "2.11.0+cu128",
+        "triton": "3.6.0"
+      },
+      "total_seconds": null
+    },
+    {
+      "id": "wikitext:dense_attention",
+      "source_repository": "scratch/higher-dimensional-sdm-attention-topology-controls",
+      "source_commit": "8fb98e565c7ebfca6d827330dc0bf59839f9285e",
+      "source_path": "results/m5-sdm-attention-topology-wikitext103-seed0-v1/a8_dense/extracted/artifacts/result.json",
+      "source_sha256": "02b53fd7550ee3c9d73d5fca64284e405c07b578555723ad61d7e79d87e38a11",
+      "source_arm": "a8_dense",
+      "manifest_sha256": "fc4ef13cbc38070f2d7774dffbfd5be48cab31fe45d6d9995d522fc3bac1dde6",
+      "common_parameter_sha256": "61c709278cd51f1391a909e417b7879ee5562d229b9a5f2361c507084dd71a36",
+      "hardware": {
+        "cuda": "12.8",
+        "gpu": "NVIDIA A40",
+        "numpy": "2.5.2",
+        "python": "3.12.3",
+        "torch": "2.11.0+cu128",
+        "triton": "3.6.0"
+      },
+      "total_seconds": 2612.730648536235
+    },
+    {
+      "id": "wikitext:fixed_k8",
+      "source_repository": "scratch/sdm-paper-sparsity-access-curriculum",
+      "source_commit": "7f1447e0b126d1b2e3413688d1f977cb55831e65",
+      "source_path": "results/m5-p2-shared-bootstrap-geometry-depth8-wikitext103-seed0-v1/p2_c32_r8_w8_fixed_shared.result.json",
+      "source_sha256": "39774c0b2be5df5c6ce4ccd1af76771ff9a1c28120bd76ff2150193718e7ee36",
+      "source_arm": "p2_c32_r8_w8_fixed_shared",
+      "manifest_sha256": "fc4ef13cbc38070f2d7774dffbfd5be48cab31fe45d6d9995d522fc3bac1dde6",
+      "common_parameter_sha256": "47f42b13c4b3cd3ebcb7a01b42b96d15d2d482a00ffd2debc1cab1cbc9b654fa",
+      "hardware": {
+        "cuda": "12.8",
+        "gpu": "NVIDIA GeForce RTX 4090",
+        "numpy": "2.4.3",
+        "python": "3.12.3",
+        "torch": "2.11.0+cu128",
+        "triton": "3.6.0"
+      },
+      "total_seconds": 31682.048152085394
+    },
+    {
+      "id": "recall:dense_attention",
+      "source_repository": "scratch/sdm-paper-sparsity-access-curriculum",
+      "source_commit": "593d484228ed2b1d1e391de304819791fdd2dd83",
+      "source_path": "results/p2-curriculum-matched-attention-recall-seed0-v1/extracted/result.json",
+      "source_sha256": "5e68ffd4f4d11be19aa83f5ee3349dddadd0e9c703525f5476708a7c76ce362c",
+      "source_arm": "dense_attention",
+      "manifest_sha256": "b0587d62c3ab709c94e37742892451a39463a7d577212b9379bd76d966f97800",
+      "hardware": {
+        "accelerator": "NVIDIA A40",
+        "cuda": "12.8",
+        "pytorch": "2.11.0+cu128"
+      },
+      "total_seconds": 1490.6544559001923,
+      "reproduction_code_commit": "4af5b828af88cc3a282b40b535739545030bbb52",
+      "runtime_image": "pytorch/pytorch@sha256:eee11b3b3872a8c838e35ef48f08b2d5def2080902c7f666831310ca1a0ef2be",
+      "terminal_checkpoint": {
+        "path": "terminal-model.pt",
+        "sha256": "36ed9f8b1a5a8b249cb3a01121014587163273226ac2ec2f938d5439702cbbf1"
+      },
+      "learning_rate_evidence": {
+        "source_path": "results/p2-curriculum-matched-attention-recall-seed0-v1/extracted/training_curve.jsonl",
+        "source_sha256": "5659a2f850036b3f9a1487ec4580be5dc4d3513f53a47b4f98b52b649d320907",
+        "optimizer_rows": 30000,
+        "schedule": "warmup_constant",
+        "warmup_steps": 100,
+        "peak_learning_rate": 0.0003,
+        "all_rows_verified": true
+      }
+    },
+    {
+      "id": "recall:fixed_k8",
+      "source_repository": "scratch/.worktrees/p2-curriculum-recall-basis-v1",
+      "source_commit": "be80250736d35135b2b62d079380dc1f4e507201",
+      "source_path": "results/m5-p2-shared-curriculum-basis-depth8-recall-seed0-v1/p2_c32_r8_w8_fixed_shared/result.compact.json",
+      "source_sha256": "ab96f462c3ebe8a6ac69d97902b9c835109df1b472ad04c0c6bcfefc90596da9",
+      "source_arm": "p2_c32_r8_w8_fixed_shared",
+      "manifest_sha256": "b0587d62c3ab709c94e37742892451a39463a7d577212b9379bd76d966f97800",
+      "common_parameter_sha256": "c02d9d732e5fe8ad539ac74076acca10ebfce546e1cd246f305d5f1723d689f4",
+      "hardware": {
+        "cuda": "12.8",
+        "gpu": "NVIDIA GeForce RTX 4090",
+        "numpy": "2.4.3",
+        "python": "3.12.3",
+        "torch": "2.11.0+cu128",
+        "triton": "3.6.0"
+      },
+      "total_seconds": null
+    },
+    {
+      "id": "wikitext:hybrid_native_k8",
+      "source_repository": "scratch/.worktrees/p2-headline-topology-matrix-v1",
+      "source_commit": "2711837ce554158f14a4737bce4ac065ba4d1068",
+      "source_path": "results/m5-p2-headline-topology-b7a1-wikitext103-seed0-v1/b7a1_p2_c32_r8_w8_fixed_native.result.json",
+      "source_sha256": "a4f31d67c34e67b025fc8265ab3899eec21e1777e3d6c8f79c4d113a19b1f3c1",
+      "source_arm": "b7a1_p2_c32_r8_w8_fixed_native",
+      "manifest_sha256": "fc4ef13cbc38070f2d7774dffbfd5be48cab31fe45d6d9995d522fc3bac1dde6",
+      "common_parameter_sha256": "c5ebb90d8a51e7a3ff584d77ac8d63c9f3e3a995571469116e7068b5931f3241",
+      "hardware": {
+        "cuda": "12.8",
+        "gpu": "NVIDIA RTX PRO 4500 Blackwell",
+        "numpy": "2.4.3",
+        "python": "3.12.3",
+        "torch": "2.11.0+cu128",
+        "triton": "3.6.0"
+      },
+      "total_seconds": 23385.184423916973,
+      "parameter_accounting": {
+        "fixed_shell_active_parameters": 14506368,
+        "input_embedding_parameters": 6432896,
+        "learned_product_prior_parameters": 57344,
+        "output_projection_parameters": 6432896,
+        "recurrent_mixer_active_parameters": 465948,
+        "total_trainable_parameters": 15029660,
+        "base_total_trainable_parameters_before_sidecar": 15029660,
+        "routing_sidecar_trainable_parameters": 0
+      }
+    },
+    {
+      "id": "wikitext:hybrid_fixed_k8",
+      "source_repository": "scratch/.worktrees/p2-headline-topology-matrix-v1",
+      "source_commit": "2711837ce554158f14a4737bce4ac065ba4d1068",
+      "source_path": "results/m5-p2-headline-topology-b7a1-wikitext103-seed0-v1/b7a1_p2_c32_r8_w8_fixed_shared.result.json",
+      "source_sha256": "4f965d03e1aab8f04219121e1011a9ea94ba0769c5e53edf98ce34a53e396276",
+      "source_arm": "b7a1_p2_c32_r8_w8_fixed_shared",
+      "manifest_sha256": "fc4ef13cbc38070f2d7774dffbfd5be48cab31fe45d6d9995d522fc3bac1dde6",
+      "common_parameter_sha256": "c5ebb90d8a51e7a3ff584d77ac8d63c9f3e3a995571469116e7068b5931f3241",
+      "hardware": {
+        "cuda": "12.8",
+        "gpu": "NVIDIA RTX PRO 4500 Blackwell",
+        "numpy": "2.4.3",
+        "python": "3.12.3",
+        "torch": "2.11.0+cu128",
+        "triton": "3.6.0"
+      },
+      "total_seconds": 24284.054404277354,
+      "parameter_accounting": {
+        "fixed_shell_active_parameters": 14506368,
+        "input_embedding_parameters": 6432896,
+        "learned_product_prior_parameters": 57344,
+        "output_projection_parameters": 6432896,
+        "recurrent_mixer_active_parameters": 465948,
+        "total_trainable_parameters": 15087452,
+        "base_total_trainable_parameters_before_sidecar": 15029660,
+        "routing_sidecar_trainable_parameters": 57792
+      }
+    },
+    {
+      "id": "wikitext:hybrid_recall_forward",
+      "source_repository": "scratch/.worktrees/p2-headline-topology-matrix-v1",
+      "source_commit": "2711837ce554158f14a4737bce4ac065ba4d1068",
+      "source_path": "results/m5-p2-headline-topology-b7a1-wikitext103-seed0-v1/b7a1_p2_c32_rho4_a1_r64_w64_staged4k_shared.result.json",
+      "source_sha256": "c1069505acb8b9a5c4c6f29ded582b4915fd6accb888b293d7dd666977b88698",
+      "source_arm": "b7a1_p2_c32_rho4_a1_r64_w64_staged4k_shared",
+      "manifest_sha256": "fc4ef13cbc38070f2d7774dffbfd5be48cab31fe45d6d9995d522fc3bac1dde6",
+      "common_parameter_sha256": "c5ebb90d8a51e7a3ff584d77ac8d63c9f3e3a995571469116e7068b5931f3241",
+      "hardware": {
+        "cuda": "12.8",
+        "gpu": "NVIDIA RTX PRO 4500 Blackwell",
+        "numpy": "2.4.3",
+        "python": "3.12.3",
+        "torch": "2.11.0+cu128",
+        "triton": "3.6.0"
+      },
+      "total_seconds": 24534.61402142793,
+      "parameter_accounting": {
+        "fixed_shell_active_parameters": 14506368,
+        "input_embedding_parameters": 6432896,
+        "learned_product_prior_parameters": 57344,
+        "output_projection_parameters": 6432896,
+        "recurrent_mixer_active_parameters": 465948,
+        "total_trainable_parameters": 15087452,
+        "base_total_trainable_parameters_before_sidecar": 15029660,
+        "routing_sidecar_trainable_parameters": 57792
+      }
+    },
+    {
+      "id": "wikitext:hybrid_balanced",
+      "source_repository": "scratch/.worktrees/p2-headline-topology-matrix-v1",
+      "source_commit": "2711837ce554158f14a4737bce4ac065ba4d1068",
+      "source_path": "results/m5-p2-headline-topology-b7a1-wikitext103-seed0-v1/b7a1_p2_c32_rho1_a4_r16_w64_staged4k_shared.result.json",
+      "source_sha256": "edb76e54f827aa76c8e7bca10aac6a66fea928fafbe38b4c022ee1f1d7405b67",
+      "source_arm": "b7a1_p2_c32_rho1_a4_r16_w64_staged4k_shared",
+      "manifest_sha256": "fc4ef13cbc38070f2d7774dffbfd5be48cab31fe45d6d9995d522fc3bac1dde6",
+      "common_parameter_sha256": "c5ebb90d8a51e7a3ff584d77ac8d63c9f3e3a995571469116e7068b5931f3241",
+      "hardware": {
+        "cuda": "12.8",
+        "gpu": "NVIDIA RTX PRO 4500 Blackwell",
+        "numpy": "2.4.3",
+        "python": "3.12.3",
+        "torch": "2.11.0+cu128",
+        "triton": "3.6.0"
+      },
+      "total_seconds": 21650.586719729938,
+      "parameter_accounting": {
+        "fixed_shell_active_parameters": 14506368,
+        "input_embedding_parameters": 6432896,
+        "learned_product_prior_parameters": 57344,
+        "output_projection_parameters": 6432896,
+        "recurrent_mixer_active_parameters": 465948,
+        "total_trainable_parameters": 15087452,
+        "base_total_trainable_parameters_before_sidecar": 15029660,
+        "routing_sidecar_trainable_parameters": 57792
+      }
+    },
+    {
+      "id": "wikitext:hybrid_wiki_forward",
+      "source_repository": "scratch/.worktrees/p2-headline-topology-matrix-v1",
+      "source_commit": "2711837ce554158f14a4737bce4ac065ba4d1068",
+      "source_path": "results/m5-p2-headline-topology-b7a1-wikitext103-seed0-v1/b7a1_p2_c32_rho4_a4_r32_w128_staged4k_shared.result.json",
+      "source_sha256": "f236240313042c6d7641ce2f2f205993be0ab76093c2e39aa7341c4a2d1a06f5",
+      "source_arm": "b7a1_p2_c32_rho4_a4_r32_w128_staged4k_shared",
+      "manifest_sha256": "fc4ef13cbc38070f2d7774dffbfd5be48cab31fe45d6d9995d522fc3bac1dde6",
+      "common_parameter_sha256": "c5ebb90d8a51e7a3ff584d77ac8d63c9f3e3a995571469116e7068b5931f3241",
+      "hardware": {
+        "cuda": "12.8",
+        "gpu": "NVIDIA RTX PRO 4500 Blackwell",
+        "numpy": "2.4.3",
+        "python": "3.12.3",
+        "torch": "2.11.0+cu128",
+        "triton": "3.6.0"
+      },
+      "total_seconds": 22411.707341760397,
+      "parameter_accounting": {
+        "fixed_shell_active_parameters": 14506368,
+        "input_embedding_parameters": 6432896,
+        "learned_product_prior_parameters": 57344,
+        "output_projection_parameters": 6432896,
+        "recurrent_mixer_active_parameters": 465948,
+        "total_trainable_parameters": 15087452,
+        "base_total_trainable_parameters_before_sidecar": 15029660,
+        "routing_sidecar_trainable_parameters": 57792
+      }
+    },
+    {
+      "id": "recall:hybrid_native_k8",
+      "source_repository": "scratch/.worktrees/p2-headline-topology-matrix-v1",
+      "source_commit": "2711837ce554158f14a4737bce4ac065ba4d1068",
+      "source_path": "results/m5-p2-headline-topology-b7a1-recall-seed0-v1/b7a1_p2_c32_r8_w8_fixed_native/result.compact.json",
+      "source_sha256": "69cef9d876b1e6ad5ad7a4355aac9d48600a2d112f71a0dc51a8b4f0a9f72d04",
+      "source_arm": "b7a1_p2_c32_r8_w8_fixed_native",
+      "manifest_sha256": "b0587d62c3ab709c94e37742892451a39463a7d577212b9379bd76d966f97800",
+      "common_parameter_sha256": "6af00f5df2bae992e8a6cb3a0238ad3c1bef3567a72778e862540242a3560c88",
+      "hardware": {
+        "cuda": "12.8",
+        "gpu": "NVIDIA RTX PRO 4000 Blackwell",
+        "numpy": "2.4.3",
+        "python": "3.12.3",
+        "torch": "2.11.0+cu128",
+        "triton": "3.6.0"
+      },
+      "total_seconds": null,
+      "parameter_accounting": {
+        "fixed_shell_active_parameters": 1679744,
+        "input_embedding_parameters": 14592,
+        "learned_product_prior_parameters": 57344,
+        "output_projection_parameters": 24576,
+        "recurrent_mixer_active_parameters": 465948,
+        "total_trainable_parameters": 2203036,
+        "base_total_trainable_parameters_before_sidecar": 2203036,
+        "routing_sidecar_trainable_parameters": 0
+      }
+    },
+    {
+      "id": "recall:hybrid_fixed_k8",
+      "source_repository": "scratch/.worktrees/p2-headline-topology-matrix-v1",
+      "source_commit": "2711837ce554158f14a4737bce4ac065ba4d1068",
+      "source_path": "results/m5-p2-headline-topology-b7a1-recall-seed0-v1/b7a1_p2_c32_r8_w8_fixed_shared/result.compact.json",
+      "source_sha256": "40d43a4220e05b3d9a96e8398fc44ce7641e00199ad6118bbd1011b4f21fae22",
+      "source_arm": "b7a1_p2_c32_r8_w8_fixed_shared",
+      "manifest_sha256": "b0587d62c3ab709c94e37742892451a39463a7d577212b9379bd76d966f97800",
+      "common_parameter_sha256": "6af00f5df2bae992e8a6cb3a0238ad3c1bef3567a72778e862540242a3560c88",
+      "hardware": {
+        "cuda": "12.8",
+        "gpu": "NVIDIA RTX PRO 4000 Blackwell",
+        "numpy": "2.4.3",
+        "python": "3.12.3",
+        "torch": "2.11.0+cu128",
+        "triton": "3.6.0"
+      },
+      "total_seconds": null,
+      "parameter_accounting": {
+        "fixed_shell_active_parameters": 1679744,
+        "input_embedding_parameters": 14592,
+        "learned_product_prior_parameters": 57344,
+        "output_projection_parameters": 24576,
+        "recurrent_mixer_active_parameters": 465948,
+        "total_trainable_parameters": 2260828,
+        "base_total_trainable_parameters_before_sidecar": 2203036,
+        "routing_sidecar_trainable_parameters": 57792
+      }
+    },
+    {
+      "id": "recall:hybrid_recall_forward",
+      "source_repository": "scratch/.worktrees/p2-headline-topology-matrix-v1",
+      "source_commit": "2711837ce554158f14a4737bce4ac065ba4d1068",
+      "source_path": "results/m5-p2-headline-topology-b7a1-recall-seed0-v1/b7a1_p2_c32_rho4_a1_r64_w64_staged4k_shared/result.compact.json",
+      "source_sha256": "305f8229418bba7aa6b0129d1992938840892562146af493be868d6a91c326ae",
+      "source_arm": "b7a1_p2_c32_rho4_a1_r64_w64_staged4k_shared",
+      "manifest_sha256": "b0587d62c3ab709c94e37742892451a39463a7d577212b9379bd76d966f97800",
+      "common_parameter_sha256": "6af00f5df2bae992e8a6cb3a0238ad3c1bef3567a72778e862540242a3560c88",
+      "hardware": {
+        "cuda": "12.8",
+        "gpu": "NVIDIA RTX PRO 4000 Blackwell",
+        "numpy": "2.4.3",
+        "python": "3.12.3",
+        "torch": "2.11.0+cu128",
+        "triton": "3.6.0"
+      },
+      "total_seconds": null,
+      "parameter_accounting": {
+        "fixed_shell_active_parameters": 1679744,
+        "input_embedding_parameters": 14592,
+        "learned_product_prior_parameters": 57344,
+        "output_projection_parameters": 24576,
+        "recurrent_mixer_active_parameters": 465948,
+        "total_trainable_parameters": 2260828,
+        "base_total_trainable_parameters_before_sidecar": 2203036,
+        "routing_sidecar_trainable_parameters": 57792
+      }
+    },
+    {
+      "id": "recall:hybrid_balanced",
+      "source_repository": "scratch/.worktrees/p2-headline-topology-matrix-v1",
+      "source_commit": "2711837ce554158f14a4737bce4ac065ba4d1068",
+      "source_path": "results/m5-p2-headline-topology-b7a1-recall-seed0-v1/b7a1_p2_c32_rho1_a4_r16_w64_staged4k_shared/result.compact.json",
+      "source_sha256": "362f9f6769133a55adc1755f72d1794ff78724b1a004c17717549d3aac173f5a",
+      "source_arm": "b7a1_p2_c32_rho1_a4_r16_w64_staged4k_shared",
+      "manifest_sha256": "b0587d62c3ab709c94e37742892451a39463a7d577212b9379bd76d966f97800",
+      "common_parameter_sha256": "6af00f5df2bae992e8a6cb3a0238ad3c1bef3567a72778e862540242a3560c88",
+      "hardware": {
+        "cuda": "12.8",
+        "gpu": "NVIDIA RTX PRO 4000 Blackwell",
+        "numpy": "2.4.3",
+        "python": "3.12.3",
+        "torch": "2.11.0+cu128",
+        "triton": "3.6.0"
+      },
+      "total_seconds": null,
+      "parameter_accounting": {
+        "fixed_shell_active_parameters": 1679744,
+        "input_embedding_parameters": 14592,
+        "learned_product_prior_parameters": 57344,
+        "output_projection_parameters": 24576,
+        "recurrent_mixer_active_parameters": 465948,
+        "total_trainable_parameters": 2260828,
+        "base_total_trainable_parameters_before_sidecar": 2203036,
+        "routing_sidecar_trainable_parameters": 57792
+      }
+    },
+    {
+      "id": "recall:hybrid_wiki_forward",
+      "source_repository": "scratch/.worktrees/p2-headline-topology-matrix-v1",
+      "source_commit": "2711837ce554158f14a4737bce4ac065ba4d1068",
+      "source_path": "results/m5-p2-headline-topology-b7a1-recall-seed0-v1/b7a1_p2_c32_rho4_a4_r32_w128_staged4k_shared/result.compact.json",
+      "source_sha256": "5e763b7031ef5d2887b539ec0f796dda1f10c7a12ba2632844c955e43fc3d542",
+      "source_arm": "b7a1_p2_c32_rho4_a4_r32_w128_staged4k_shared",
+      "manifest_sha256": "b0587d62c3ab709c94e37742892451a39463a7d577212b9379bd76d966f97800",
+      "common_parameter_sha256": "6af00f5df2bae992e8a6cb3a0238ad3c1bef3567a72778e862540242a3560c88",
+      "hardware": {
+        "cuda": "12.8",
+        "gpu": "NVIDIA RTX PRO 4000 Blackwell",
+        "numpy": "2.4.3",
+        "python": "3.12.3",
+        "torch": "2.11.0+cu128",
+        "triton": "3.6.0"
+      },
+      "total_seconds": null,
+      "parameter_accounting": {
+        "fixed_shell_active_parameters": 1679744,
+        "input_embedding_parameters": 14592,
+        "learned_product_prior_parameters": 57344,
+        "output_projection_parameters": 24576,
+        "recurrent_mixer_active_parameters": 465948,
+        "total_trainable_parameters": 2260828,
+        "base_total_trainable_parameters_before_sidecar": 2203036,
+        "routing_sidecar_trainable_parameters": 57792
+      }
+    },
+    {
+      "id": "wikitext:native_k8",
+      "source_repository": "scratch/.worktrees/topk-p2-paper-overlap-wikitext",
+      "source_commit": "d1fcbec72cd634b85539efe960d3dc51df6aab64",
+      "source_path": "results/m5-p2-paper-overlap-access-curriculum-depth8-wikitext103-seed0-v1/p2_c32_k8_fixed_native.result.json",
+      "source_sha256": "f5c739353b5430faa0bbca63c646b080c0929efc09a84847d01be4f735f1d938",
+      "source_arm": "p2_c32_k8_fixed_native",
+      "manifest_sha256": "fc4ef13cbc38070f2d7774dffbfd5be48cab31fe45d6d9995d522fc3bac1dde6",
+      "common_parameter_sha256": "47f42b13c4b3cd3ebcb7a01b42b96d15d2d482a00ffd2debc1cab1cbc9b654fa",
+      "hardware": {
+        "cuda": "12.8",
+        "gpu": "NVIDIA GeForce RTX 4090",
+        "numpy": "2.4.3",
+        "python": "3.12.3",
+        "torch": "2.11.0+cu128",
+        "triton": "3.6.0"
+      },
+      "total_seconds": 13519.289597098948,
+      "parameter_accounting": {
+        "fixed_shell_active_parameters": 14440832,
+        "input_embedding_parameters": 6432896,
+        "learned_product_prior_parameters": 65536,
+        "output_projection_parameters": 6432896,
+        "recurrent_mixer_active_parameters": 532512,
+        "total_trainable_parameters": 15038880,
+        "base_total_trainable_parameters_before_sidecar": 15038880,
+        "routing_sidecar_trainable_parameters": 0
+      }
+    },
+    {
+      "id": "recall:native_k8",
+      "source_repository": "scratch/.worktrees/p2-headline-recall-controls-v1",
+      "source_commit": "2639f77e34d450077079c9d1cab1a4ef8d7ec4c9",
+      "source_path": "results/m5-p2-native-fixed-k8-depth8-recall-seed0-v1/p2_c32_r8_w8_fixed_native/result.compact.json",
+      "source_sha256": "34b71fd2a30d68f86f8323911076da2823f0bc963b639c391a0ad91686e6cccc",
+      "source_arm": "p2_c32_r8_w8_fixed_native",
+      "manifest_sha256": "b0587d62c3ab709c94e37742892451a39463a7d577212b9379bd76d966f97800",
+      "common_parameter_sha256": "c02d9d732e5fe8ad539ac74076acca10ebfce546e1cd246f305d5f1723d689f4",
+      "hardware": {
+        "cuda": "12.8",
+        "gpu": "NVIDIA RTX PRO 4000 Blackwell",
+        "numpy": "2.4.3",
+        "python": "3.12.3",
+        "torch": "2.11.0+cu128",
+        "triton": "3.6.0"
+      },
+      "total_seconds": null,
+      "parameter_accounting": {
+        "fixed_shell_active_parameters": 1614208,
+        "input_embedding_parameters": 14592,
+        "learned_product_prior_parameters": 65536,
+        "output_projection_parameters": 24576,
+        "recurrent_mixer_active_parameters": 532512,
+        "total_trainable_parameters": 2212256,
+        "base_total_trainable_parameters_before_sidecar": 2212256,
+        "routing_sidecar_trainable_parameters": 0
+      }
+    }
+  ],
+  "factor_definitions": {
+    "rho": "initial R*W/N",
+    "asymmetry": "initial W/R",
+    "contraction": [
+      "direct",
+      "staged"
+    ]
+  },
+  "extraction": "reproduction/extraction.json",
+  "scope": "Primary comparison: fixed residualized B8 and the 32/128 versus 64/64 direct/staged access cells C, D, G, H, on WikiText and Adaptive Recall. Supporting evidence retains the complete eight-cell B8 factorial and five SDM policies in B8/B7A1 plus A8 dense attention (22 topology endpoints)."
+}

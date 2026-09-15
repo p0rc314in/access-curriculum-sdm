@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "sha256": {
+    "data/results.json": "32b4f5e807fc44edf5b2d7efd28509d8798caae1346fcc5468ef2e401fcccdad",
+    "data/recall-breakdown.json": "746a4fe84a42f7f908a182f459eb0bfe572b0df90771dd2889d54e369a030b3d",
+    "figures/curriculum-gain.png": "8bcd20738c5e0c6b61f6f27b919c84063e34742ee6bb1b14b084dca4c2569728",
+    "figures/social-preview.png": "885b17cba4b24c1f42bf608f0e0d879cf19d8654b31fefa527818e3d16517bb0",
+    "provenance.json": "76402ddd1a9e98f58cbef9a39a346221c8b0899134c1172a7a61cbfabd015145",
+    "PROJECT_IDENTITY.json": "5312fafa7f59c80b7afa3e665f3c494b0f2d67aba0e88ebc360ab309fb0306e0",
+    "reproduction/extraction.json": "3660db544c3d615f7818ae97b418abb4d6af6b6ed0e7c3145ea2fabc9665deaf",
+    "reproduction/initialization.py": "b287dc669ded3c7acf659d5439a17b1d30eecb61481494417aa83709870566ca"
+  }
+}
